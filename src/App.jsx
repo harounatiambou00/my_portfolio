@@ -4,6 +4,14 @@ import {CssBaseline} from '@mui/material';
 import { ThemeContext } from './contexts/ThemeContext';
 import { useContext } from 'react';
 
+//Pages importation
+import {Home, AboutMe, ContactMe, Experiences, Services, Skills, Portfolio} from './pages';
+
+//Components importation
+import { Navbar } from './components';
+
+import {Toolbar} from '@mui/material';
+
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
@@ -14,8 +22,17 @@ const App = () => {
         style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
       >
         <CssBaseline />
-        App
-        <Test />
+        <Navbar />
+        <Toolbar />
+        <main>
+          <Home />
+          <AboutMe />
+          <Skills />
+          <Experiences />
+          <Portfolio />
+          <Services />
+          <ContactMe />
+        </main>
       </div>
     </ThemeContext.Provider>
   )
