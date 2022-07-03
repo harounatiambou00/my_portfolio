@@ -1,26 +1,43 @@
 import React from 'react';
-import {AppBar, Toolbar, Grid, IconButton, Tooltip} from '@mui/material';
-import { styled } from '@mui/material/styles';
+import {AppBar, Toolbar, IconButton, Tooltip} from '@mui/material';
+
+import {BiMenuAltLeft} from 'react-icons/bi';
 
 import ElevationScroll from './ElevationScroll';
 
+import { useContext } from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 import DarkAndLightButton from './dark_light_modes_button/DarkAndLightButton';
+import { ServicesButton } from '..';
 
 const Navbar = (props) => {
+  const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
 
   return (
     <ElevationScroll {...props}>
-      <AppBar>
+      <AppBar sx={isDarkTheme? {backgroundColor: "primary"} : {backgroundColor: "#EEEEEE"}}>
         <Toolbar>
-          <Grid container spacing={2}>
-            <Grid
-              item
-              xs={2}
+          <div
+            className='flex flex-row'
+          >
+            <div
+              className='underline'
+            >
+              Tiamtech
+            </div>
+            <div
+              
             >
               <DarkAndLightButton />
-            </Grid>
-          </Grid>
+            </div>
+            <div
+              
+            >
+              <ServicesButton />
+              <DarkAndLightButton />
+            </div>
+          </div>
         </Toolbar>
       </AppBar>
     </ElevationScroll>

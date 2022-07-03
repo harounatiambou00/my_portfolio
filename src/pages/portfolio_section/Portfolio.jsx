@@ -9,7 +9,6 @@ const Portfolio = () => {
     <div 
       className='app__section'
       id='portfolio__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
     >
       Portfolio
     </div>

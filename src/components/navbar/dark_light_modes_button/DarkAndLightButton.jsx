@@ -16,13 +16,13 @@ const DarkAndLightButton = () => {
   return (
     <Tooltip
         arrow
-        placement='left'
+        placement='bottom'
         title={isDarkTheme? 'Turn on the light' : 'Turn off the light'}
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 600 }}
     >
         <IconButton
-            color={isDarkTheme? 'warning' : 'secondary'}
+            color={isDarkTheme? 'warning' : 'primary'}
             onClick={() => setIsDarkTheme(!isDarkTheme)}
         >
             {isDarkTheme? <BsSun /> : <BsFillMoonFill />}

@@ -9,7 +9,6 @@ const Experiences = () => {
     <div 
       className='app__section'
       id='experiences__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
     >
       Experiences
     </div>
