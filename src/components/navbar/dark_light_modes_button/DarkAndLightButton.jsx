@@ -22,7 +22,7 @@ const DarkAndLightButton = () => {
         TransitionProps={{ timeout: 600 }}
     >
         <IconButton
-            color={isDarkTheme? 'warning' : 'secondary'}
+            color={isDarkTheme? 'warning' : 'primary'}
             onClick={() => setIsDarkTheme(!isDarkTheme)}
         >
             {isDarkTheme? <BsSun /> : <BsFillMoonFill />}
