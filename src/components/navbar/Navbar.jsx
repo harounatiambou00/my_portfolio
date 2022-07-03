@@ -16,7 +16,7 @@ const Navbar = (props) => {
 
   return (
     <ElevationScroll {...props}>
-      <AppBar sx={isDarkTheme? {backgroundColor: "primary"} : {backgroundColor: "#EEEEEE"}}>
+      <AppBar sx={isDarkTheme? {backgroundColor: "primary"} : {backgroundColor: "white"}}>
         <Toolbar>
           <div
             className='flex flex-row'
