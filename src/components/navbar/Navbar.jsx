@@ -19,10 +19,8 @@ const Navbar = (props) => {
       <AppBar sx={isDarkTheme? {backgroundColor: "primary"} : {backgroundColor: "white"}}>
         <Toolbar>
           <div
-            className='bg-teal-50'
           >
             <div
-              className='underline'
             >
               Tiamtech
             </div>
