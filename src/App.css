@@ -14,3 +14,21 @@
 main{
     height: 100vh;
 }
+
+/*Scroll bar customization*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #041C32;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #00818A;
+    border-radius: 2px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #005960;
+}
