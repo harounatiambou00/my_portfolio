@@ -9,7 +9,7 @@ const ContactMe = () => {
     <div 
       className='app__section'
       id='contact__me__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
+      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       Contact me
     </div>

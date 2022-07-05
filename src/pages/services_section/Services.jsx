@@ -9,7 +9,7 @@ const Services = () => {
     <div 
       className='app__section'
       id='services__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
+      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       Services
     </div>

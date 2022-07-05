@@ -7,10 +7,10 @@ export const theme = createTheme({
             main: "#041C32"
         },
         secondary: {
-            main: "#10a395"
+            main: "#045f66"
         },
         warning: {
             main: '#FFF323'
-        }
+        },
     }
 });

@@ -19,7 +19,7 @@ const App = () => {
     <ThemeContext.Provider value={{isDarkTheme, setIsDarkTheme}}>
       <div
         id='app'
-        style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
+        style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
       >
         <CssBaseline />
         <Navbar />

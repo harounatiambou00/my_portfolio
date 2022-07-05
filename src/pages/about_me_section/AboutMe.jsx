@@ -9,7 +9,7 @@ const AboutMe = () => {
     <div 
       className='app__section'
       id='about__me__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "white"}}
+      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       AboutMe
     </div>
