@@ -14,6 +14,21 @@ export const theme = createTheme({
         },
         light: {
             main: "#EEEEEE"
+        },
+        linkedin:{
+            main: '#0A66C2',
+        },
+        github:{
+            main: '#000000',
+        },
+        twitter:{
+            main: '#1DA1F2',
+        },
+        facebook:{
+            main: '#1778F2'
+        },
+        black: {
+            main: '#000000'
         }
     }
 });
