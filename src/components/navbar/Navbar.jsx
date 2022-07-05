@@ -17,6 +17,7 @@ const Navbar = (props) => {
     <ElevationScroll {...props}>
       <AppBar
         sx={isDarkTheme? { backgroundColor: 'primary'} : {backgroundColor: '#EEEEEE'}}
+        className='sm:h-30 lg:h-20'
       >
         <Toolbar>
           <div 

@@ -12,5 +12,8 @@ export const theme = createTheme({
         warning: {
             main: '#FFF323'
         },
+        light: {
+            main: "#EEEEEE"
+        }
     }
 });

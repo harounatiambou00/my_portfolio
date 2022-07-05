@@ -24,7 +24,9 @@ const App = () => {
         <CssBaseline />
         <Navbar />
         <Toolbar />
-        <main>
+        <main
+          className={isDarkTheme? 'text-light' : 'text-dark'}
+        >
           <Home />
           <AboutMe />
           <Skills />
