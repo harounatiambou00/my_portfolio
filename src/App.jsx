@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import {Home, AboutMe, ContactMe, Education, Services, Skills, Portfolio} from './pages';
 
 //Components importation
-import { Navbar } from './components';
+import { Navbar, SocialMediasIcons } from './components';
 
 import {Toolbar} from '@mui/material';
 
@@ -35,6 +35,7 @@ const App = () => {
           <Services />
           <ContactMe />
         </main>
+        <SocialMediasIcons />
       </div>
     </ThemeContext.Provider>
   )
