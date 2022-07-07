@@ -7,7 +7,7 @@ const Portfolio = () => {
   
   return (
     <div 
-      className='app__section'
+      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
       id='portfolio__section'
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >

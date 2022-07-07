@@ -15,13 +15,8 @@ const Services = () => {
   
   return (
     <>
-      <div
-        className={isDarkTheme? 'sm:h-30 lg:h-20 bg-dark' : 'sm:h-30 lg:h-20 bg-light'}
-      >
-
-      </div>
       <div 
-        className='app__section'
+        className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-28'
         id='services__section'
         style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
       >

@@ -16,8 +16,8 @@ const navlinks = [
       to : "skills__section"
   },
   {
-      name: "Experiences",
-      to : "experiences__section"
+      name: "Education",
+      to : "education__section"
   },
   {
       name: "Portfolio",

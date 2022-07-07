@@ -36,7 +36,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
       </div>
       <hr />
       <div
-        className='p-5'
+        className='p-5 pt-0 pb-1'
       >
         <h6
           className='font-light'

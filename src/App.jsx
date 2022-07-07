@@ -5,7 +5,7 @@ import { ThemeContext } from './contexts/ThemeContext';
 import { useContext } from 'react';
 
 //Pages importation
-import {Home, AboutMe, ContactMe, Experiences, Services, Skills, Portfolio} from './pages';
+import {Home, AboutMe, ContactMe, Education, Services, Skills, Portfolio} from './pages';
 
 //Components importation
 import { Navbar } from './components';
@@ -13,7 +13,7 @@ import { Navbar } from './components';
 import {Toolbar} from '@mui/material';
 
 const App = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   return (
     <ThemeContext.Provider value={{isDarkTheme, setIsDarkTheme}}>
@@ -30,7 +30,7 @@ const App = () => {
           <Home />
           <AboutMe />
           <Skills />
-          <Experiences />
+          <Education />
           <Portfolio />
           <Services />
           <ContactMe />
