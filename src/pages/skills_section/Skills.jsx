@@ -97,7 +97,7 @@ const Skills = () => {
       <h3
         className='sm:text-4xl lg:text-2xl opacity-60'
       >
-        Technologies I've working with recently
+        Technologies I've been working with recently
       </h3>
       <FrontEndSkills expanded={expanded} handleChange={handleChange}/>
       <BackEndSkills expanded={expanded} handleChange={handleChange} />

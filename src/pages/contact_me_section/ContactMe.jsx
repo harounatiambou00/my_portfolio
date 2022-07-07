@@ -1,15 +1,54 @@
-import React, {useState} from 'react';
+import React, {useState, useRef } from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
+
+import emailjs from '@emailjs/browser';
 
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsTelephone} from 'react-icons/bs';
 import {GiPositionMarker} from 'react-icons/gi';
 import {FiGithub, FiTwitter, FiFacebook, FiLinkedin} from 'react-icons/fi'
-import {IconButton, TextField, Button} from '@mui/material';
+import {IconButton, TextField, Button, Snackbar, Alert} from '@mui/material';
+import LoadingButton from '@mui/lab/LoadingButton';
+
 
 const ContactMe = () => {
   const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+  const form = useRef();
+
+  const [sendEmailInProgress, setSendEmailInProgress] = useState(false); 
+
+  const sendEmail = async (e) => {
+    setInterval(30000);
+    e.preventDefault();
+    setSendEmailInProgress(true);
+    emailjs.sendForm('service_ds83pii', 'template_evkdm2r', form.current, 'user_qVbNcZxyoTP4neSN2UZtB')
+      .then((result) => {
+          setOpenSuccessSnackbar(true);
+      }, (error) => {
+          setopenErrorSnackbar(true)
+    });
+    setSendEmailInProgress(false);
+  };
+
+  const [openSuccessSnackbar, setOpenSuccessSnackbar] = useState(false);
+  const [openErrorSnackbar, setopenErrorSnackbar] = useState(false);
+
+  const handleCloseSuccessSnackbar = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpenSuccessSnackbar(false);
+  };
+
+  const handleCloseErrorSnackbar = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setopenErrorSnackbar(false);
+  };
 
   return (
     <div 
@@ -99,7 +138,9 @@ const ContactMe = () => {
             </div>
           </div>
         </div>
-        <div
+        <form
+          ref={form}
+          onSubmit={sendEmail}
           className='p-5 w-full'
         >
           <h2
@@ -118,24 +159,32 @@ const ContactMe = () => {
               label='First Name'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+              name='firstName'
+              required
             />
             <TextField 
               fullWidth
               label='Last Name'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+              name='lastName'
+              required
             />
             <TextField 
               fullWidth
               label='Email'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+              name='email'
+              required
+              type='email'
             />
             <TextField 
               fullWidth
               label='Phone Number'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+              name='phoneNumber'
             />
             </div>
             <div
@@ -146,6 +195,7 @@ const ContactMe = () => {
                 label='Subject'
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+                name='subject'
               />
               <TextField 
                 fullWidth
@@ -154,6 +204,8 @@ const ContactMe = () => {
                 label='Subject'
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
+                name='message'
+                required
               />
             </div>
           </div>
@@ -161,15 +213,56 @@ const ContactMe = () => {
             className='mt-2 flex sm:justify-center lg:justify-end'
           >
             <Button
+              type='submit'
               variant='contained'
               color='secondary'
+              sx={sendEmailInProgress ? {display: 'none'} : {display: 'block'}}
               className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
             > 
               Send
             </Button>
+            <LoadingButton
+              loading
+              variant="outlined"
+              color='secondary'
+              sx={sendEmailInProgress ? {display: 'block'} : {display: 'none'}}
+              className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
+            >
+              SEND
+            </LoadingButton>
           </div>
-        </div>
+        </form>
       </div>
+      <Snackbar 
+        open={openSuccessSnackbar} 
+        autoHideDuration={6000} 
+        onClose={handleCloseSuccessSnackbar}
+        anchorOrigin={{vertical: 'top', horizontal: 'right'}}
+      >
+        <Alert 
+          onClose={handleCloseSuccessSnackbar} 
+          severity="success" 
+          sx={{ width: '100%' }}
+          className='font-kanit'
+        >
+          Your message has been sent successfully.<br />We'll reply you in next 24hours insha'allah.
+        </Alert>
+      </Snackbar>
+      <Snackbar 
+        open={openErrorSnackbar} 
+        autoHideDuration={6000} 
+        onClose={handleCloseErrorSnackbar}
+        anchorOrigin={{vertical: 'top', horizontal: 'right'}}
+      >
+        <Alert 
+          onClose={handleCloseErrorSnackbar} 
+          severity="error" 
+          sx={{ width: '100%' }}
+          className='font-kanit'
+        >
+          Something went wrong retry please.
+        </Alert>
+      </Snackbar>
     </div>
   )
 }
