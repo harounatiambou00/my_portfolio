@@ -6,12 +6,13 @@ import { IconButton } from '@mui/material';
 import {BiMenuAltLeft} from 'react-icons/bi';
 
 const MenuButton = () => {
-    const {isDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, toggleMobileDeviceDrawer} = useContext(ThemeContext);
 
   return (
     <IconButton
         size='large'
         color={isDarkTheme ? 'secondary':'primary'}
+        onClick={toggleMobileDeviceDrawer(true)}
     >
         <BiMenuAltLeft />
     </IconButton>

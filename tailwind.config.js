@@ -37,6 +37,9 @@ module.exports = {
         'kanit': ['Kanit', 'sans-serif'],
         'righteous': ['Righteous', 'cursive'],
       },
+      width: {
+        'drawer': '40rem',
+      }
     },
   },
   plugins: [],
