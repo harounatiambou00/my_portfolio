@@ -57,7 +57,7 @@ const ContactMe = () => {
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
-        className='text-4xl opacity-80 lg:mt-20 mb-4'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4'
       >
         Contact Us
       </h1>

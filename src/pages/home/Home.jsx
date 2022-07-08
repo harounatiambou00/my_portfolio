@@ -6,7 +6,7 @@ import {Tooltip, Button} from '@mui/material';
 const Home = () => {
   return (
     <div
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 sm:mb-20 lg:pt-4'
+      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 sm:pb-20  lg:pt-4'
       id='home__section'
     >
       <div

@@ -37,7 +37,7 @@ const AboutMe = () => {
             <span
               className='font-righteous sm:text-2xl lg:text-lg text-teal tracking-wide'
             >
-              Harouna TIAMBOU Abdoul Wahabou
+              Abdoul Wahabou Harouna TIAMBOU
             </span>
             .
           </p>

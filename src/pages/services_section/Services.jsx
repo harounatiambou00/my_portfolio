@@ -21,9 +21,9 @@ const Services = () => {
         style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
       >
         <h1
-          className='text-4xl opacity-80'
+          className='sm:text-6xl lg:text-4xl opacity-80'
         >
-          Our services
+          Our Services
         </h1>
         <h4
           className='text-2xl opacity-60'
