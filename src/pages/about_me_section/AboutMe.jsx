@@ -31,7 +31,7 @@ const AboutMe = () => {
           className={isDarkTheme? 'text-light px-10 sm:py-20 lg:py-0' : 'text-dark px-10 sm:py-20 lg:py-0'}
         >
           <p
-            className='first-letter:font-righteous sm:first-letter:text-5xl lg:first-letter:text-4xl sm:text-2xl lg:text-base font-normal first-letter:text-teal'
+            className='first-letter:font-splash sm:first-letter:text-5xl lg:first-letter:text-4xl sm:text-2xl lg:text-base font-normal first-letter:text-teal'
           >
             Hi, my name is &nbsp;&nbsp;
             <span

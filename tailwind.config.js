@@ -36,6 +36,8 @@ module.exports = {
         'mono': ['ui-monospace', 'SFMono-Regular',],
         'kanit': ['Kanit', 'sans-serif'],
         'righteous': ['Righteous', 'cursive'],
+        'splash': ['Splash', 'cursive'],
+        'poiret': ['Poiret One', 'cursive'],
       },
       width: {
         'drawer': '40rem',
