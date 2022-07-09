@@ -12,8 +12,8 @@ module.exports = {
         teal: '#045f66',
         white: "#FFFFFF",
         success: '#00FFAB',
-        warning: '#FFF323',
-        error: '#FFF323'
+        tiamshopBgColor: '#3B0000',
+        personaWebSiteBgColor: '#FFAB4C'
       },
       fontSize: {
         'xs': '.75rem',
@@ -41,6 +41,12 @@ module.exports = {
       },
       width: {
         'drawer': '40rem',
+      },
+      height: {
+        'small_device_portfolio_swipper': '50rem'
+      },
+      borderOpacity: {
+
       }
     },
   },

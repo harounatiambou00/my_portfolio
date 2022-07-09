@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
@@ -6,12 +6,11 @@ import Img from '../../assets/images/Me.png'
 
 import './styles.css';
 
-import ShortcutIcon from '@mui/icons-material/Shortcut';
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const AboutMe = () => {
-  const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+  const {isDarkTheme} = useContext(ThemeContext);
 
   return (
     <div 
@@ -47,7 +46,7 @@ const AboutMe = () => {
             A young student from <span className='text-teal font-kanit sm:text-2xl lg:text-lg font-medium'>NIGER</span> living in Monastir(Tunisia), who is passionate about IT.<br />
             I'm currently an undergraduated student(3th year) at the university of Monastir, class of 2020-2023.<br />
             I'm pursuing a bachelor in Software Engineering from which I'll be graduated by the end of August 2023 (if everything goes well).<br />
-            I'm also the CEO of <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, a small starup which provide services such as WEBSITES development, Restful APIs development, Mobile Apps development, IT Consulting, and so on . . .<br />
+            I'm also the CEO of <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, a small starup based in Niger which provides services such as WEBSITES development, Restful APIs development, Mobile Apps development, IT Consulting, and so on . . .<br />
           </p>
           <div
             className='flex justify-center'
@@ -63,6 +62,7 @@ const AboutMe = () => {
           </div>
         </div>
           <img 
+            alt='me'
             id='profile__image'
             src={Img}
             className={isDarkTheme? 'bg-light lg:h-96 lg:w-96 flex justify-center items-center':'bg-dark lg:h-96 lg:w-96 flex justify-center items-center'}

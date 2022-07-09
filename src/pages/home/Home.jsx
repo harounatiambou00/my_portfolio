@@ -1,7 +1,6 @@
-import React, {useContext} from 'react';
-import ThemeContext from '../../contexts/ThemeContext';
+import React from 'react';
 
-import {Tooltip, Button} from '@mui/material';
+import {Tooltip, Button, Zoom} from '@mui/material';
 
 const Home = () => {
   return (
@@ -13,15 +12,16 @@ const Home = () => {
         className='sm:text-4xl lg:text-2xl font-kanit font-light sm:pl-10 lg:pl-0'
       >
         <Tooltip
-          arrow
-          placement='top'
-          title="San'nu means 'Hello' in my native language."
+          placement='top-start'
+          title="Fofo means 'Hello' in my native language."
           className='font-kanit cursor-pointer'
+          TransitionComponent={Zoom}
+          TransitionProps={{timeout: 300}}
         >
           <p
             className='first-letter:font-splash sm:first-letter:text-6xl lg:first-letter:text-4xl first-letter:font-semibold text-teal'
           >
-            San'nu, my name is
+            Fofo, my name is
           </p>
         </Tooltip>
         <p
@@ -32,7 +32,7 @@ const Home = () => {
         <p
             className='font-kanit sm:text-6xl lg:text-4xl opacity-70 font-medium'
         >
-          I build things for the web.
+          I create things related to the Web.
         </p>
         <p
             className='sm:text-4xl lg:text-xl opacity-90 mt-7'
