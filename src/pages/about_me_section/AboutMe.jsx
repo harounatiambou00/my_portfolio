@@ -9,20 +9,34 @@ import './styles.css';
 import { Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 
+import {motion} from 'framer-motion';
+
 const AboutMe = () => {
   const {isDarkTheme} = useContext(ThemeContext);
 
   return (
-    <div 
+    <motion.div 
       className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
       id='about__me__section'
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 3,
+      }}
     >
-      <h1
+      <motion.h1
+        initial={{y: 20}}
+        animate={{y: 0}}
+        transition={{duration: 1}}
         className='sm:text-6xl lg:text-4xl opacity-80'
       >
         About Me
-      </h1>
+      </motion.h1>
       <div
         className='flex sm:flex-col lg:flex-row justify-between items-center w-5/6 lg:h-4/6'
       >
@@ -74,7 +88,7 @@ const AboutMe = () => {
             className={isDarkTheme? 'bg-light lg:h-96 lg:w-96 flex justify-center items-center':'bg-dark lg:h-96 lg:w-96 flex justify-center items-center'}
           />
       </div>
-    </div>
+    </motion.div>
   )
 }
 
