@@ -5,6 +5,8 @@ import {IconButton, Tooltip, Zoom, Snackbar, Alert} from '@mui/material';
 
 import {FiGithub, FiLinkedin, FiFacebook, FiMail, FiTwitter} from 'react-icons/fi';
 
+import {motion} from 'framer-motion';
+
 const SocialMediasIcons = () => {
     const {isDarkTheme} = useContext(ThemeContext);
 
@@ -23,8 +25,11 @@ const SocialMediasIcons = () => {
     };
 
   return (
-    <div
+    <motion.div
         className='fixed left-4 bottom-1/3'
+        initial={{x: -100}}
+        animate={{x: 0}}
+        transition={{duration: 2}}
     >
         <div 
             className='sm:hidden lg:flex items-center justify-center flex-col'
@@ -90,7 +95,7 @@ const SocialMediasIcons = () => {
                     The email address has been successfully copied to your clipboard.
                 </Alert>
         </Snackbar>
-    </div>
+    </motion.div>
   )
 }
 
