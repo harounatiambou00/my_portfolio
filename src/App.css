@@ -18,17 +18,21 @@ main{
 /*Scroll bar customization*/
 ::-webkit-scrollbar {
     width: 5px;
+    border: none;
 }
   
 ::-webkit-scrollbar-track {
     background: #041C32;
+    border: none;
 }
   
 ::-webkit-scrollbar-thumb {
     background: #00818A;
     border-radius: 2px;
+    border: none;
 }
   
 ::-webkit-scrollbar-thumb:hover {
     background: #005960;
+    border: none;
 }

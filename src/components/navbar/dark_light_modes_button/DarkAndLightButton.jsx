@@ -21,12 +21,28 @@ const DarkAndLightButton = () => {
         TransitionComponent={Zoom}
         TransitionProps={{ timeout: 600 }}
     >
-        <IconButton
-            color={isDarkTheme? 'warning' : 'primary'}
-            onClick={() => setIsDarkTheme(!isDarkTheme)}
+        <div
+          className={isDarkTheme? 'w-16 h-6 bg-black rounded-full flex justify-between items-center cursor-pointer' : 'w-16 h-6 bg-white rounded-full flex justify-between items-center cursor-pointer'}
+          onClick={() => setIsDarkTheme(!isDarkTheme)}
         >
-            {isDarkTheme? <BsSun /> : <BsFillMoonFill />}
-        </IconButton>
+          <IconButton
+            size='small'
+            color={isDarkTheme? 'black' : 'warning'}
+            className={isDarkTheme? 'bg-light' : 'bg-teal'}
+          >
+            {
+              isDarkTheme? <BsFillMoonFill /> : <BsSun />
+            }
+          </IconButton>
+          <IconButton
+            size='small'
+            color={isDarkTheme? 'warning' : 'black'}
+          >
+            {
+              isDarkTheme? <BsSun /> : <BsFillMoonFill />
+            }
+          </IconButton>
+        </div>
     </Tooltip>
   )
 }

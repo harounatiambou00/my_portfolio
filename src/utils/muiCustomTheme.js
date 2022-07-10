@@ -15,6 +15,9 @@ export const theme = createTheme({
         light: {
             main: "#EEEEEE"
         },
+        black: {
+            main: "#000000"
+        },
         linkedin:{
             main: '#0A66C2',
         },

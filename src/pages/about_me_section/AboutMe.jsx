@@ -57,7 +57,13 @@ const AboutMe = () => {
               className='sm:w-3/4 sm:h-16 lg:h-auto sm:text-xl lg:text-base lg:w-2/4 font-righteous mt-5'
               startIcon={<DownloadIcon />}
             >
-              Download My Resume
+              <a
+                href='https://drive.google.com/file/d/1Ef2_PLiuB_frMQM8GwN5JsOxx45mcpJr/view?usp=sharing'
+                target="_blank"
+                rel='noreferrer'
+              >
+                Download My Resume
+              </a>
             </Button>
           </div>
         </div>
