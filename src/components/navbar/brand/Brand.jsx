@@ -5,24 +5,30 @@ import Logo from '../../../assets/images/logo.png';
 
 import './brand.css';
 
+import { motion } from 'framer-motion';
+
 
 const Brand = () => {
   const {isDarkTheme} = useContext(ThemeContext);
   return (
-    <a
+    <motion.a
+      initial={{y: -100}}
+      animate={{y: 0}}
+      transition={{duration: 1}}
       href='#home__section'
       className='sm:mt-5 sm:mb-5 w-full flex flex-row justify-center items-center'
     >
       <img 
         src={Logo}
         className='sm:h-20 lg:h-10'
+        alt='logo'
       />
       <h1
         className={isDarkTheme? 'sm:hidden lg:block ml-2 text-teal font-extrabold' : 'sm:hidden lg:block ml-2 text-teal font-extrabold'}
       >
         IAMTECH
       </h1>
-    </a>
+    </motion.a>
   )
 }
 

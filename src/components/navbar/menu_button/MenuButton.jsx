@@ -5,17 +5,25 @@ import { IconButton } from '@mui/material';
 
 import {BiMenuAltLeft} from 'react-icons/bi';
 
+import { motion } from 'framer-motion';
+
 const MenuButton = () => {
     const {isDarkTheme, toggleMobileDeviceDrawer} = useContext(ThemeContext);
 
   return (
-    <IconButton
-        size='large'
-        color={isDarkTheme ? 'secondary':'primary'}
-        onClick={toggleMobileDeviceDrawer(true)}
+    <motion.div
+      initial={{y: -100}}
+      animate={{y: 0}}
+      transition={{duration: 1.75}}
     >
-        <BiMenuAltLeft />
-    </IconButton>
+      <IconButton
+          size='large'
+          color={isDarkTheme ? 'secondary':'primary'}
+          onClick={toggleMobileDeviceDrawer(true)}
+      >
+          <BiMenuAltLeft />
+      </IconButton>
+    </motion.div>
   )
 }
 
