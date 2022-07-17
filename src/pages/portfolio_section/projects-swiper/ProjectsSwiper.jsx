@@ -7,9 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+import 'swiper/css/navigation';
 
 // import required modules
-import { EffectCards, Pagination } from "swiper";
+import { EffectCards, Pagination, Navigation } from "swiper";
 
 import './styles.css';
 
@@ -28,9 +29,10 @@ const ProjectsSwiper = () => {
     <Swiper
           effect={"cards"}
           grabCursor={true}
-          modules={[EffectCards, Pagination]}
+          modules={[EffectCards, Pagination, Navigation]}
+          navigation
+          pagination={{ clickable: true }}
           className="mySwiper h-full w-full"
-          pagination={true}
     >
           {
             projects.map((project) => {
