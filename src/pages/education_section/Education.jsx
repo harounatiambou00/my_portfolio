@@ -57,12 +57,12 @@ const Education = () => {
 
   return (
     <div 
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pb-28'
+      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-0'
       id='education__section'
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
-        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-80'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-1'
       >
         Education
       </h1>
@@ -100,6 +100,7 @@ const Education = () => {
               <img 
                 className='h-16 w-16 rounded-full'
                 src={UM}
+                alt='Monastir University'
               />
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-2'
@@ -152,6 +153,7 @@ const Education = () => {
               <img 
                 className='h-16 w-16 rounded-full'
                 src={MD}
+                alt='Manou Diatta'
               />
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-4'

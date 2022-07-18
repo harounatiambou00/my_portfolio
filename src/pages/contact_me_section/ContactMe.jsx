@@ -52,7 +52,7 @@ const ContactMe = () => {
 
   return (
     <div 
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
+      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-20'
       id='contact__me__section'
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >

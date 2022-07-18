@@ -23,12 +23,12 @@ const Skills = () => {
 
   return (
     <div 
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
+      className='app__section sm:h-auto items-center justify-center sm:pt-0'
       id='skills__section'
       style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
-        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-80'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20'
       >
         Skills
       </h1>
