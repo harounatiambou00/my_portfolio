@@ -25,7 +25,7 @@ const Skills = () => {
     <div 
       className='app__section sm:h-auto items-center justify-center sm:pt-0'
       id='skills__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20'

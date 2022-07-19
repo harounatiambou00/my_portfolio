@@ -4,14 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   important: true,
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        dark: '#041C32',
+        dark: '#121212',
+        darkElevation: '#202020',
         light: '#EEEEEE',
         teal: '#045f66',
         white: "#FFFFFF",
         success: '#00FFAB',
+        warning: "#FFF323",
         tiamshopBgColor: '#3B0000',
         personaWebSiteBgColor: '#FFAB4C'
       },

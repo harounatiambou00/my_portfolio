@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../../../contexts/ThemeContext';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,6 +26,7 @@ import {FaCodeBranch} from 'react-icons/fa';
 
 
 const ProjectsSwiper = () => {
+    const {isDarkTheme} = useContext(ThemeContext);
   return (
     <Swiper
           effect={"cards"}
@@ -38,7 +40,7 @@ const ProjectsSwiper = () => {
             projects.map((project) => {
                 return(
                     <SwiperSlide
-                        className='rounded-md bg-white text-dark'
+                        className='rounded-md bg-white dark:bg-darkElevation text-dark dark:text-light'
                     >
                        <div
                         className='flex sm:flex-col lg:flex-row w-full h-full p-0'
@@ -104,42 +106,25 @@ const ProjectsSwiper = () => {
                                         
                                         Github
                                     </Button>
-                                    {
-                                        project.url === '' ? (
-                                            <Button
-                                                startIcon={<HiExternalLink />}
-                                                variant='outlined'
-                                                color='secondary'
-                                                className='ml-5 font-kanit'
-                                                disabled
-                                            >
-                                                
-                                                Visit
-                                            </Button>
-                                        ) : (
-                                            <Button
-                                                startIcon={<HiExternalLink />}
-                                                variant='outlined'
-                                                color='secondary'
-                                                className='ml-5 font-kanit'
-                                                href={project.url}
-                                            >
-                                                
-                                                Visit
-                                            </Button>
-                                        )
-                                    }
+                                    <Button
+                                        startIcon={<HiExternalLink />}
+                                        variant='outlined'
+                                        color='light'
+                                        className='ml-5 font-kanit'
+                                    >
+                                            Visit
+                                    </Button>
                                 </div>
                                 <div
                                     className='flex items-center justify-center sm:mt-5 lg:mt-5'
                                 >
                                     <IconButton
-                                        color='primary'
+                                        color={isDarkTheme? 'light':'primary'}
                                         className=''
                                     >
                                         <FaCodeBranch />
                                         <span
-                                            className='text-sm text-dark font-righteous'
+                                            className='text-sm text-dark dark:text-light font-righteous'
                                         >
                                             {project.numberOfBranches}
                                         </span>
@@ -149,7 +134,7 @@ const ProjectsSwiper = () => {
                                     >
                                         <AiFillStar />
                                         <span
-                                            className='text-sm text-dark font-righteous'
+                                            className='text-sm text-dark dark:text-light font-righteous'
                                         >
                                             {project.numberOfLikes}
                                         </span>

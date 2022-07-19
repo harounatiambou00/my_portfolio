@@ -20,11 +20,16 @@ const Brand = () => {
     >
       <img 
         src={Logo}
-        className='sm:h-20 lg:h-10'
+        className='sm:h-20 lg:h-10 dark:hidden'
+        alt='logo'
+      />
+      <img 
+        src={Logo}
+        className='sm:h-20 lg:h-10 hidden dark:block'
         alt='logo'
       />
       <h1
-        className={isDarkTheme? 'sm:hidden lg:block ml-2 text-teal font-extrabold' : 'sm:hidden lg:block ml-2 text-teal font-extrabold'}
+        className='sm:hidden lg:block ml-2 text-teal dark:text-teal-700 font-extrabold'
       >
         IAMTECH
       </h1>

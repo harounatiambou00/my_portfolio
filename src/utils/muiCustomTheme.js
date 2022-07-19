@@ -4,7 +4,7 @@ export const theme = createTheme({
     palette: {
         type: "light",
         primary: {
-            main: "#041C32"
+            main: "#202020"
         },
         secondary: {
             main: "#045f66"
@@ -29,9 +29,6 @@ export const theme = createTheme({
         },
         facebook:{
             main: '#1778F2'
-        },
-        black: {
-            main: '#000000'
         },
         htmlLogoColor: {
             main: '#e34f26'

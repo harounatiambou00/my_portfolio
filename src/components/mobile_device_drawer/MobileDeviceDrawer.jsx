@@ -24,7 +24,7 @@ const MobileDeviceDrawer = () => {
         onClose={toggleMobileDeviceDrawer(false)}
     >
         <div
-            className='h-screen font-kanit bg-light w-drawer flex flex-col justify-between'
+            className='h-screen font-kanit bg-light dark:bg-darkElevation w-drawer flex flex-col justify-between'
         >
             <div>
                 <div
@@ -33,10 +33,11 @@ const MobileDeviceDrawer = () => {
                     <img 
                         src={Logo}
                         className='sm:h-20 lg:h-10'
+                        alt='logo'
                     />
                     <IconButton
                         onClick={toggleMobileDeviceDrawer(false)}
-                        color='primary'
+                        color={isDarkTheme? 'light' : 'primary'}
                     >
                         <AiOutlineClose />
                     </IconButton>

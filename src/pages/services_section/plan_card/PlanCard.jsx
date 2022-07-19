@@ -11,7 +11,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
   const {isDarkTheme} = useContext(ThemeContext);
   return (
     <div
-      className={isDarkTheme ? 'border-2 border-light rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0': 'border-2 border-dark rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0'}
+      className={isDarkTheme ? 'bg-darkElevation rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0': 'border-2 border-dark rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0'}
     >
       <div
         className='p-5'

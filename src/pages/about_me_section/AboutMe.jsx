@@ -18,7 +18,7 @@ const AboutMe = () => {
     <motion.div 
       className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
       id='about__me__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
       initial={{
         opacity: 0,
       }}
@@ -85,7 +85,7 @@ const AboutMe = () => {
             alt='me'
             id='profile__image'
             src={Img}
-            className={isDarkTheme? 'bg-light lg:h-96 lg:w-96 flex justify-center items-center':'bg-dark lg:h-96 lg:w-96 flex justify-center items-center'}
+            className='bg-gray-100 dark:bg-darkElevation  lg:h-96 lg:w-96 flex justify-center items-center'
           />
       </div>
     </motion.div>

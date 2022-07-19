@@ -18,7 +18,7 @@ const Services = () => {
       <div 
         className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-28'
         id='services__section'
-        style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+        style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
       >
         <h1
           className='sm:text-6xl lg:text-4xl opacity-80'
@@ -31,40 +31,40 @@ const Services = () => {
           Find the best plan for your ...
         </h4>
         <div
-          className={isDarkTheme? 'bg-light flex rounded-md mt-4' : 'bg-dark flex rounded-md mt-4'}
+          className='flex rounded-md mt-4 bg-dark dark:bg-darkElevation'
         >
           <Button
-            color = {isDarkTheme? 'primary':'light'}
-            variant={serviceType == 0? 'contained':'text'}
+            color = {isDarkTheme? 'secondary':'light'}
+            variant={serviceType === 0? 'contained':'text'}
             onClick={() => setServiceType(0)}
-            className='mr-4 font-light'
+            className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
             Fullstack Development
           </Button>
           <Button
-            color = {isDarkTheme? 'primary':'light'}
-            variant={serviceType == 1? 'contained':'text'}
+            color = {isDarkTheme? 'secondary':'light'}
+            variant={serviceType === 1? 'contained':'text'}
             onClick={() => setServiceType(1)}
-            className='mr-4 font-light'
+            className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
             FrontEnd Development
           </Button>
           <Button
-            color = {isDarkTheme? 'primary':'light'}
-            variant={serviceType == 2? 'contained':'text'}
+            color = {isDarkTheme? 'secondary':'light'}
+            variant={serviceType === 2? 'contained':'text'}
             onClick={() => setServiceType(2)}
-            className='mr-4 font-light'
+            className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
             WEB APIs development
           </Button>
           <Button
-            color = {isDarkTheme? 'primary':'light'}
-            variant={serviceType == 3? 'contained':'text'}
+            color = {isDarkTheme? 'secondary':'light'}
+            variant={serviceType === 3? 'contained':'text'}
             onClick={() => setServiceType(3)}
-            className='font-light'
+            className='font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
             WEB DESIGN

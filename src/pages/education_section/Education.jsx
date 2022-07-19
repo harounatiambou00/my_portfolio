@@ -21,7 +21,7 @@ function TabPanel(props) {
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
-      className='text-dark font-kanit'
+      className='text-dark dark:text-light font-kanit'
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -59,20 +59,22 @@ const Education = () => {
     <div 
       className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-0'
       id='education__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
-        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-1'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-10'
       >
         Education
       </h1>
       <Box
-        sx={{display: 'flex', bgcolor: 'background.paper'}}
-        className='sm:w-5/6 lg:w-5/6 font-kanit'
+        sx={{display: 'flex'}}
+        className='sm:w-5/6 lg:w-5/6 font-kanit bg-white dark:bg-darkElevation'
       >
         <Tabs
           orientation="vertical"
           variant="scrollable"
+          textColor={isDarkTheme? 'secondary' : 'primary'}
+          indicatorColor="secondary"
           value={value}
           onChange={handleChange}
           aria-label="Vertical tabs example"
@@ -100,7 +102,7 @@ const Education = () => {
               <img 
                 className='h-16 w-16 rounded-full'
                 src={UM}
-                alt='Monastir University'
+                alt='University Of Monastir'
               />
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-2'

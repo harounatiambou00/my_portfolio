@@ -54,7 +54,7 @@ const ContactMe = () => {
     <div 
       className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-20'
       id='contact__me__section'
-      style={isDarkTheme ? {backgroundColor: '#041C32'} : {backgroundColor: "#EEEEEE"}}
+      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4'
@@ -62,7 +62,7 @@ const ContactMe = () => {
         Contact Us
       </h1>
       <div
-        className={isDarkTheme? 'flex sm:flex-col-reverse lg:flex-row sm:w-11/12 lg:w-10/12  bg-white drop-shadow-md rounded-md':'flex sm:flex-col-reverse lg:flex-row sm:w-11/12 lg:w-10/12 bg-white drop-shadow-md rounded-md'}
+        className='flex sm:flex-col-reverse lg:flex-row sm:w-11/12 lg:w-10/12  bg-white drop-shadow-md rounded-md'
       >
         <div
           className='bg-teal lg:w-1/3 h-full drop-shadow-md sm:rounded-b-md lg:rounded-l-md p-5'

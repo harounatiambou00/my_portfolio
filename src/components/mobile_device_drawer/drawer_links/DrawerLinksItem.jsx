@@ -12,7 +12,7 @@ const DrawerLinksItem = ({title, signet, icon}) => {
     >
         <a
             href={'#' + signet}
-            className={title === 'Services' ?  'w-full flex justify-center items-center bg-dark text-light p-4 rounded-xl mt-20' : 'w-full flex items-center bg-white p-4 rounded-full'}
+            className={title === 'Services' ?  'w-full flex justify-center items-center bg-dark text-light p-4 rounded-xl mt-20' : 'w-full flex items-center bg-white dark:bg-light p-4 rounded-full'}
         >
             <IconButton
                 className='text-4xl mr-4'

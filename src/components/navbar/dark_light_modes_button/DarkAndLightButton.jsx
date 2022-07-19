@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { BiMenuAltLeft } from 'react-icons/bi';
 import { BsSun, BsFillMoonFill } from 'react-icons/bs';
 
 import { useContext } from 'react';
@@ -28,28 +27,15 @@ const DarkAndLightButton = () => {
           TransitionComponent={Zoom}
           TransitionProps={{ timeout: 600 }}
       >
-          <div
-            className={isDarkTheme? 'w-16 h-6 bg-black rounded-full flex justify-between items-center cursor-pointer' : 'w-16 h-6 bg-white rounded-full flex justify-between items-center cursor-pointer'}
-            onClick={() => setIsDarkTheme(!isDarkTheme)}
-          >
-            <IconButton
-              size='small'
-              color={isDarkTheme? 'black' : 'warning'}
-              className={isDarkTheme? 'bg-light' : 'bg-teal'}
-            >
-              {
-                isDarkTheme? <BsFillMoonFill /> : <BsSun />
-              }
-            </IconButton>
-            <IconButton
-              size='small'
-              color={isDarkTheme? 'warning' : 'black'}
-            >
-              {
-                isDarkTheme? <BsSun /> : <BsFillMoonFill />
-              }
-            </IconButton>
-          </div>
+        <IconButton
+          onClick={() => setIsDarkTheme(!isDarkTheme)}
+          className={isDarkTheme? 'text-warning' : 'text-dark'}
+          color='light'
+        >
+          {
+            isDarkTheme? <BsSun /> : <BsFillMoonFill />
+          }
+        </IconButton>
       </Tooltip>
     </motion.div>
   )

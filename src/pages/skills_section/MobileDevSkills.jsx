@@ -16,16 +16,16 @@ const MobileDevSkills = ({expanded, handleChange}) => {
     <Accordion 
         expanded={expanded === 'mobile-dev-panel'} 
         onChange={handleChange('mobile-dev-panel')}
-        className={expanded === 'mobile-dev-panel'? 'sm:w-5/6 lg:w-4/6' : 'sm:w-5/6 lg:w-3/6'}
+        className={expanded === 'mobile-dev-panel'? 'sm:w-5/6 lg:w-4/6 bg-white dark:bg-darkElevation text-dark dark:text-light' : 'sm:w-5/6 lg:w-3/6 bg-white dark:bg-darkElevation text-dark dark:text-light'}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon color={isDarkTheme? 'secondary' : 'primary'} />}
           aria-controls="mobile-dev--panel-content"
           id="mobile-dev-panel-header"
           className='flex items-center'
         >
           <div
-            className='flex items-center font-righteous text-dark'
+            className='flex items-center font-righteous text-dark dark:text-light'
           >
             <IconButton
               color='secondary'
