@@ -1,15 +1,11 @@
-import React, {useContext} from 'react';
-import { ThemeContext } from '../../../contexts/ThemeContext';
+import React from 'react';
 
 import Logo from '../../../assets/images/logo.png';
-
-import './brand.css';
 
 import { motion } from 'framer-motion';
 
 
 const Brand = () => {
-  const {isDarkTheme} = useContext(ThemeContext);
   return (
     <motion.a
       initial={{y: -100}}
@@ -29,7 +25,7 @@ const Brand = () => {
         alt='logo'
       />
       <h1
-        className='sm:hidden lg:block ml-2 text-teal dark:text-teal-700 font-extrabold'
+        className='sm:hidden lg:block ml-2 text-teal dark:text-teal-700 font-extrabold tracking-wider font-righteous'
       >
         IAMTECH
       </h1>

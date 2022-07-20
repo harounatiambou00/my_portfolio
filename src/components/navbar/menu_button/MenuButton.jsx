@@ -18,7 +18,7 @@ const MenuButton = () => {
     >
       <IconButton
           size='large'
-          color={isDarkTheme ? 'secondary':'primary'}
+          color={isDarkTheme ? 'light':'primary'}
           onClick={toggleMobileDeviceDrawer(true)}
       >
           <BiMenuAltLeft />

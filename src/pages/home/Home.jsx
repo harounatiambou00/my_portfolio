@@ -4,6 +4,8 @@ import {Tooltip, Button, Zoom} from '@mui/material';
 
 import { motion } from 'framer-motion';
 
+import TypewriterComponent from 'typewriter-effect';
+
 const Home = () => {
   return (
     <motion.div
@@ -35,7 +37,14 @@ const Home = () => {
             transition={{duration: 1}}
             className='first-letter:font-splash sm:first-letter:text-6xl lg:first-letter:text-4xl first-letter:font-semibold text-teal'
           >
-            Fofo, my name is
+            <TypewriterComponent 
+              options={{
+                strings: "Fofo, my name is",
+                autoStart: true,
+                cursor: "_", 
+                delay : 50
+              }}
+            />
           </motion.p>
         </Tooltip>
         <motion.p
@@ -46,7 +55,14 @@ const Home = () => {
             transition={{duration: 1}}
             className='font-righteous sm:text-8xl lg:text-5xl opacity-90 text-teal'
         >
-          Abdoul Wahabou Harouna TIAMBOU.
+          <TypewriterComponent 
+            options={{
+              strings: "Abdoul Wahabou Harouna TIAMBOU.",
+              autoStart: true,
+              cursor: "_",
+              delay: 50,
+            }}
+          />
         </motion.p>
         <motion.p
             initial={{y: 40}}
@@ -54,7 +70,14 @@ const Home = () => {
             transition={{duration: 1}}
             className='font-kanit sm:text-6xl lg:text-4xl opacity-70 font-medium'
         >
-          I create things related to the Web.
+          <TypewriterComponent 
+            options={{
+              strings: "I create things related to the Web.",
+              autoStart: true,
+              cursor: "_",
+              delay: 50
+            }}
+          />
         </motion.p>
         <motion.p
             initial={{y: 50}}
@@ -62,8 +85,14 @@ const Home = () => {
             transition={{duration: 1}}
             className='sm:text-4xl lg:text-xl opacity-90 mt-7'
         >
-          I'm a software engineering student specialized in websites and mobile apps development.<br />
-          Currently, I'm also heading a small start-up named <span className='sm:text-4xl lg:text-2xl text-teal font-righteous'>TiamTech</span>.
+          <TypewriterComponent 
+            options={{
+              strings: " I'm a software engineering student specialized in websites and mobile apps development.<br />\nCurrently, I'm also heading a small start-up named TiamTech.",
+              autoStart: true,
+              cursor: "_",
+              delay: 20,
+            }}
+          />
         </motion.p>
         
       </div>

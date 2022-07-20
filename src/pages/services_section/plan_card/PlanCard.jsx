@@ -17,11 +17,35 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
         className='p-5'
       >
         <h2>{type}</h2>
-        <span>
-          {level}
-        </span>
+        {
+          level === 'Basic' && (
+            <span
+              className='text-red-400 font-light'
+            >
+              {level}
+            </span>
+          )
+        }
+        {
+          level === 'Standard' && (
+            <span
+              className='text-orange-400 font-light'
+            >
+              {level}
+            </span>
+          )
+        }
+        {
+          level === 'Premium' && (
+            <span
+              className='text-green-600 font-light'
+            >
+              {level}
+            </span>
+          )
+        }
         <h2
-          className='font-bold mt-2'
+          className='font-light mt-2'
         >
           {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / hour</sub></h2>
         <Button
@@ -34,7 +58,6 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
           GET IT
         </Button>
       </div>
-      <hr />
       <div
         className='p-5 pt-0 pb-1'
       >

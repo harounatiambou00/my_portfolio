@@ -16,7 +16,7 @@ module.exports = {
         success: '#00FFAB',
         warning: "#FFF323",
         tiamshopBgColor: '#3B0000',
-        personaWebSiteBgColor: '#FFAB4C'
+        personaWebSiteBgColor: '#FFAB4C',
       },
       fontSize: {
         'xs': '.75rem',

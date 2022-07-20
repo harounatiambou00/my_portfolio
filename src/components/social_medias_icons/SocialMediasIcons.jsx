@@ -5,6 +5,9 @@ import {IconButton, Tooltip, Zoom, Snackbar, Alert} from '@mui/material';
 
 import {FiGithub, FiLinkedin, FiFacebook, FiMail, FiTwitter} from 'react-icons/fi';
 
+import {BsGithub, BsLinkedin, BsFacebook, BsTwitter} from 'react-icons/bs';
+import {IoIosMail} from 'react-icons/io'
+
 import {motion} from 'framer-motion';
 
 const SocialMediasIcons = () => {
@@ -35,33 +38,33 @@ const SocialMediasIcons = () => {
             className='sm:hidden lg:flex items-center justify-center flex-col'
         >
             <IconButton
-                color={isDarkTheme? 'secondary' : 'githubLogoColor'}
+                color={isDarkTheme? 'light' : 'githubLogoColor'}
             >
                 <a
                     href='https://github.com/harounatiambou00'
                 >
-                    <FiGithub />
+                    <BsGithub />
                 </a>
             </IconButton>
             <IconButton
-                color={isDarkTheme? 'secondary' : 'linkedin'}
+                color='linkedin'
             >
                 <a href='https://www.linkedin.com/in/abdoul-wahabou-harouna-tiambou-475099210/'>
-                    <FiLinkedin />
+                    <BsLinkedin />
                 </a>
             </IconButton>
             <IconButton
-                color={isDarkTheme? 'secondary' : 'facebook'}
+                color='facebook'
             >
-                <a href='https://m.facebook.com/abdoulwahab.harouna.98' target='_blank'>
-                    <FiFacebook />
+                <a href='https://m.facebook.com/abdoulwahab.harouna.98' target='_blank' rel="noreferrer">
+                    <BsFacebook />
                 </a>    
             </IconButton>
             <IconButton
-                color={isDarkTheme? 'secondary' : 'twitter'}
+                color='twitter'
             >
-                <a href='https://twitter.com/AbdoulTiambou' target='_blank'>
-                    <FiTwitter />
+                <a href='https://twitter.com/AbdoulTiambou' target='_blank' rel="noreferrer">
+                    <BsTwitter />
                 </a>
             </IconButton>
             <Tooltip 
@@ -74,9 +77,10 @@ const SocialMediasIcons = () => {
             >
                 <IconButton
                     onClick={() => handleClickCopyEmail()}
-                    color={isDarkTheme? 'secondary' : 'primary'}
+                    color={isDarkTheme? 'warning' : 'secondary'}
+                    className='rouded-lg bg-gray-200 dark:bg-darkElevation'
                 >
-                    <FiMail />
+                    <IoIosMail />
                 </IconButton>
             </Tooltip>
         </div>

@@ -69,7 +69,7 @@ const MobileDeviceDrawer = () => {
                     className='text-4xl'
                     color={isDarkTheme? 'secondary' : 'facebook'}
                 >
-                    <a href='https://m.facebook.com/abdoulwahab.harouna.98' target='_blank'>
+                    <a href='https://m.facebook.com/abdoulwahab.harouna.98' target='_blank' rel="noreferrer">
                         <FiFacebook />
                     </a>    
                 </IconButton>
@@ -77,7 +77,7 @@ const MobileDeviceDrawer = () => {
                     className='text-4xl'
                     color={isDarkTheme? 'secondary' : 'twitter'}
                 >
-                    <a href='https://twitter.com/AbdoulTiambou' target='_blank'>
+                    <a href='https://twitter.com/AbdoulTiambou' target='_blank'  rel="noreferrer">
                         <FiTwitter />
                     </a>
                 </IconButton>

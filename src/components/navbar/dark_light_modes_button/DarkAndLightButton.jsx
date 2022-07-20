@@ -19,6 +19,7 @@ const DarkAndLightButton = () => {
       initial={{y: -100}}
       animate={{y: 0}}
       transition={{duration: 1.75}}
+      className='bg-gray-200 dark:bg-darkElevation rounded-lg'
     >
       <Tooltip
           arrow
