@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import {Button, Toolbar} from '@mui/material';
+import {Button} from '@mui/material';
 import {services} from './dummyservices';
-import {advantages} from './advantages';
 
 
 import PlanCard from './plan_card/PlanCard'
 
 const Services = () => {
-  const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+  const {isDarkTheme} = useContext(ThemeContext);
   const [serviceType, setServiceType] = useState(0);
 
   
@@ -18,7 +17,6 @@ const Services = () => {
       <div 
         className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-28'
         id='services__section'
-        style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
       >
         <h1
           className='sm:text-6xl lg:text-4xl opacity-80'

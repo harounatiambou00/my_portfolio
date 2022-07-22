@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconButton, Box, Typography, CircularProgress } from '@mui/material';
+import { IconButton, Box, CircularProgress } from '@mui/material';
 
 const SkillCard = ({title, percentage, icon, color}) => {
   return (

@@ -43,8 +43,10 @@ const App = () => {
   //this state will help us to open and close the drawer on mobile devices.
   const [mobileDrawerIsOpen, setmobileDrawerIsOpen] = useState(false);
   
+  /**
+   * This method will help us to open/close the drawer on mobile devise 
+   */
   const toggleMobileDeviceDrawer = (value) => (event) => {
-
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
@@ -64,7 +66,7 @@ const App = () => {
         {/*This toolbar is used to ignoren the space unde the appbar*/}
         <Toolbar />
         <main
-          className='text-dark dark:text-light'
+          className='text-dark dark:text-light bg-light dark:bg-dark'
         >
           <LinkParticles />
           <Home />

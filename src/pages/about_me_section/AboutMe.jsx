@@ -1,6 +1,4 @@
 import React from 'react';
-import { useContext } from 'react';
-import { ThemeContext } from '../../contexts/ThemeContext';
 
 import Img from '../../assets/images/Me.png'
 
@@ -12,13 +10,11 @@ import DownloadIcon from '@mui/icons-material/Download';
 import {motion} from 'framer-motion';
 
 const AboutMe = () => {
-  const {isDarkTheme} = useContext(ThemeContext);
 
   return (
     <motion.div 
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-4'
+      className='app__section sm:h-screen lg:h-screen items-center justify-center sm:pt-48 lg:pt-4 bg-light dark:bg-dark'
       id='about__me__section'
-      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
       initial={{
         opacity: 0,
       }}
@@ -26,7 +22,7 @@ const AboutMe = () => {
         opacity: 1
       }}
       transition={{
-        duration: 3,
+        duration: 1,
       }}
     >
       <motion.h1
@@ -41,7 +37,7 @@ const AboutMe = () => {
         className='flex sm:flex-col lg:flex-row justify-between items-center w-5/6 lg:h-4/6'
       >
         <div
-          className={isDarkTheme? 'text-light px-10 sm:py-20 lg:py-0' : 'text-dark px-10 sm:py-20 lg:py-0'}
+          className='text-dark dark:text-light px-10 sm:py-20 lg:py-0'
         >
           <p
             className='first-letter:font-splash sm:first-letter:text-5xl lg:first-letter:text-4xl sm:text-2xl lg:text-base font-normal first-letter:text-teal'
@@ -50,7 +46,7 @@ const AboutMe = () => {
             <span
               className='font-righteous sm:text-2xl lg:text-lg text-teal tracking-wide'
             >
-              Abdoul Wahabou Harouna TIAMBOU
+              Abdoul Wahabou Harouna Tiambou
             </span>
             .
           </p>
@@ -86,7 +82,7 @@ const AboutMe = () => {
             alt='me'
             id='profile__image'
             src={Img}
-            className={isDarkTheme? 'bg-light lg:h-96 lg:w-96 flex justify-center items-center':'bg-dark lg:h-96 lg:w-96 flex justify-center items-center'}
+            className='bg-dark dark:bg-light lg:h-96 lg:w-96 flex justify-center items-center'
           />
       </div>
     </motion.div>

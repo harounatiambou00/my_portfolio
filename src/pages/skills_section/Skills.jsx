@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import { useContext } from 'react';
-import { ThemeContext } from '../../contexts/ThemeContext';
 
 import FrontEndSkills from './FrontEndSkills';
 import BackEndSkills from './BackEndSkills';
@@ -14,18 +12,18 @@ import {FaBrain, FaTasks} from 'react-icons/fa';
 import {TbCoffee} from 'react-icons/tb';
 
 const Skills = () => {
-  const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+  //The expanded state is a string which contains the id of the expanded panel.By default we want the frontend panel to be openned
   const [expanded, setExpanded] = useState('frontend-panel');
 
+  //If the panel passed is openned we close it and there is no openned panel, if not we expand it.
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 
   return (
     <div 
-      className='app__section sm:h-auto items-center justify-center sm:pt-0'
+      className='app__section sm:h-auto items-center justify-center sm:pt-10 lg:pt-0'
       id='skills__section'
-      style={isDarkTheme ? {backgroundColor: '#121212'} : {backgroundColor: "#EEEEEE"}}
     >
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20'
