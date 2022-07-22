@@ -26,13 +26,13 @@ const Skills = () => {
       id='skills__section'
     >
       <h1
-        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20 font-righteous'
       >
         Skills
       </h1>
 
       <h3
-          className='sm:text-4xl lg:text-2xl opacity-60 mb-2'
+          className='sm:text-4xl lg:text-2xl opacity-60 mb-2 font-righteous'
         >
           My Strengths
       </h3>
@@ -93,7 +93,7 @@ const Skills = () => {
       </div>
 
       <h3
-        className='sm:text-4xl lg:text-2xl opacity-60'
+        className='sm:text-4xl lg:text-2xl opacity-60 font-righteous'
       >
         Technologies I've been working with recently
       </h3>

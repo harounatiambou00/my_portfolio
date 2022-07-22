@@ -49,6 +49,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
         >
           {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / hour</sub></h2>
         <Button
+          href="#contact__me__section"
           fullWidth
           color={isDarkTheme? 'light':'primary'}
           sx={{fontFamily: "'Kanit', sans-serif"}}

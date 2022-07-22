@@ -61,7 +61,7 @@ const Education = () => {
       id='education__section'
     >
       <h1
-        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-10'
+        className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-10 font-righteous'
       >
         Education
       </h1>

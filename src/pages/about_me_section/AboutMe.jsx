@@ -29,7 +29,7 @@ const AboutMe = () => {
         initial={{y: 20}}
         animate={{y: 0}}
         transition={{duration: 1}}
-        className='sm:text-6xl lg:text-4xl opacity-80'
+        className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
       >
         About Me
       </motion.h1>

@@ -19,7 +19,7 @@ const Services = () => {
         id='services__section'
       >
         <h1
-          className='sm:text-6xl lg:text-4xl opacity-80'
+          className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
         >
           Our Services
         </h1>

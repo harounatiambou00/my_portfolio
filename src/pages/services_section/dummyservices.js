@@ -79,8 +79,8 @@ export const services = [
                 }
             },
             {
-                id: 0,
-                title: 'Premuim',
+                id: 1,
+                title: 'Premium',
                 advantagesIndexes:[
                     0, 1, 2, 3, 4 
                 ],
