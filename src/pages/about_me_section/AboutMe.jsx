@@ -61,6 +61,7 @@ const AboutMe = () => {
             I'm currently an undergraduated student(3th year) at the university of Monastir, class of 2020-2023.<br />
             I'm pursuing a bachelor in Software Engineering from which I'll be graduated by the end of August 2023 (if everything goes well).<br />
             I'm also the CEO of <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, a small starup based in Niger which provides services such as WEBSITES development, Restful APIs development, Mobile Apps development, IT Consulting, and so on . . .<br />
+            I'm also in charge of the academic and social affairs at the Association of Nigerian(Niger) Students and Trainees in Monastir.
           </p>
           <div
             className='flex justify-center'
@@ -85,7 +86,7 @@ const AboutMe = () => {
             alt='me'
             id='profile__image'
             src={Img}
-            className='bg-gray-100 dark:bg-darkElevation  lg:h-96 lg:w-96 flex justify-center items-center'
+            className={isDarkTheme? 'bg-light lg:h-96 lg:w-96 flex justify-center items-center':'bg-dark lg:h-96 lg:w-96 flex justify-center items-center'}
           />
       </div>
     </motion.div>

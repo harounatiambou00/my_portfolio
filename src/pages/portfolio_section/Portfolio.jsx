@@ -24,7 +24,7 @@ const Portfolio = () => {
         Here are some projects I've been working recently.
       </h1>
       <div
-        className='sm:h-small_device_portfolio_swipper lg:h-5/6 sm:w-3/6 lg:w-8/12 sm:mt-20 lg:mt-10'
+        className='sm:h-small_device_portfolio_swipper lg:h-4/6 sm:w-3/6 lg:w-10/12 sm:mt-20 lg:mt-10'
       >
         <ProjectsSwiper />
       </div>

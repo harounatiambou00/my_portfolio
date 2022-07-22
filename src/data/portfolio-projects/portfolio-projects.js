@@ -5,7 +5,7 @@ import { FaReact, FaBootstrap } from 'react-icons/fa';
 
 import EIlimi from '../../assets/images/projects/e-ilimi.png';
 import PersonalWebsite from '../../assets/images/projects/personal-website.png';
-import Tiamshop from '../../assets/images/projects/tiamshop.png';
+import TiamTasks from '../../assets/images/projects/TiamTasks.png';
 import Infoschool from '../../assets/images/projects/infoschool.png';
 
 
@@ -13,7 +13,14 @@ import Infoschool from '../../assets/images/projects/infoschool.png';
 export const projects = [
     {
         title: 'E-ILIMI',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: `
+            E-ILIMI is an e-commerce platform for book sales and purchases.
+            By books we mean numerical books or standard ones, all categories
+            combined.
+            In my natal language Ilimi stands for “Knowledge”.
+            With E-ILIMI anyone in my dear country NIGER, will be able to search
+            and order for the book he wants in two shakes of a lamb's tail.
+        `,
         image: EIlimi,
         techologies: [
             {
@@ -66,7 +73,10 @@ export const projects = [
     },
     {
         title: 'Portfolio Website',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: `
+            It's my personnal website where anyone can get in touch with me and know more about me professionally.
+            You can also check out my recent work and the services that i offer.
+        `,
         image: PersonalWebsite,
         techologies: [
             {
@@ -108,9 +118,11 @@ export const projects = [
         numberOfBranches: 5,
         numberOfLikes: 10,
     },
-    {
+    /*{
         title: 'TiamShop',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text \n ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: `
+            Tiamshop is an e-commerce website 
+        `,
         image: Tiamshop,
         techologies: [
             {
@@ -155,11 +167,15 @@ export const projects = [
         url: '',
         numberOfBranches: 10,
         numberOfLikes: 7,
-    },
+    },*/
     {
         title: 'TiamTasks',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        image: '',
+        description: `
+            TiamTasks is a task managment web application buit with Laravel 8.
+            With TiamTasks plan your day with SMART tasks to be doe by the end of the day.
+            It will help you to become more porductive in any aspect of your life.
+        `,        
+        image: TiamTasks,
         techologies: [
             {
                 title: 'HTML5',
@@ -191,7 +207,10 @@ export const projects = [
     },
     {
         title: 'InfoSchool',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: `
+            InfoSchool is an e-learning platforms for beginners in the coding world.
+            You can find many high level courses from big e-learning companies such as OpenClassrooms. 
+        `,    
         image: Infoschool,
         techologies: [
             {

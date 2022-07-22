@@ -1,4 +1,4 @@
-import React, {useState, useRef } from 'react';
+import React, {useState, useRef, useEffect } from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
@@ -10,7 +10,6 @@ import {GiPositionMarker} from 'react-icons/gi';
 import {FiGithub, FiTwitter, FiFacebook, FiLinkedin} from 'react-icons/fi'
 import {IconButton, TextField, Button, Snackbar, Alert} from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
-
 
 const ContactMe = () => {
   const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
