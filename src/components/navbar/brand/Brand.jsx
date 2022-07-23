@@ -11,17 +11,12 @@ const Brand = () => {
       initial={{y: -100}}
       animate={{y: 0}}
       transition={{duration: 1}}
-      href='#home__section'
-      className='sm:mt-5 sm:mb-5 w-full flex flex-row justify-center items-center'
+      href='#'
+      className='sm:mt-5 sm:mb-5 flex flex-row justify-center items-center'
     >
       <img 
         src={Logo}
-        className='sm:h-20 lg:h-10 dark:hidden'
-        alt='logo'
-      />
-      <img 
-        src={Logo}
-        className='sm:h-20 lg:h-10 hidden dark:block'
+        className='sm:h-20 lg:h-10'
         alt='logo'
       />
       <h1

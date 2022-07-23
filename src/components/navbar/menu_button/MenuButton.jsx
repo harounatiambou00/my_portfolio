@@ -17,6 +17,7 @@ const MenuButton = () => {
       transition={{duration: 1.75}}
     >
       <IconButton
+          className='text-6xl'
           size='large'
           color={isDarkTheme ? 'light':'primary'}
           onClick={toggleMobileDeviceDrawer(true)}

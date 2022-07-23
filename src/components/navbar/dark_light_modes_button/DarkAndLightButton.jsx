@@ -30,7 +30,7 @@ const DarkAndLightButton = () => {
       >
         <IconButton
           onClick={() => setIsDarkTheme(!isDarkTheme)}
-          className={isDarkTheme? 'text-warning' : 'text-dark'}
+          className={isDarkTheme? 'text-warning sm:text-4xl lg:text-base' : 'text-dark sm:text-4xl lg:text-base'}
           color='light'
         >
           {
