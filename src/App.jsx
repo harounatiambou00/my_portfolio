@@ -7,7 +7,7 @@ import { ThemeContext } from './contexts/ThemeContext';
 import {Home, AboutMe, ContactMe, Education, Services, Skills, Portfolio} from './pages';
 
 //Components importation
-import { Navbar, SocialMediasIcons, MobileDeviceDrawer, LinkParticles } from './components';
+import { Navbar, SocialMediasIcons, MobileDeviceDrawer, LinkParticles, Footer } from './components';
 
 import {Toolbar} from '@mui/material';
 
@@ -79,6 +79,7 @@ const App = () => {
         </main>
         <SocialMediasIcons />
         <MobileDeviceDrawer />
+        <Footer />
       </div>
     </ThemeContext.Provider>
   )
