@@ -6,15 +6,15 @@ import {motion} from 'framer-motion';
 
 const navlinks = [
   {
-      name: "Home",
+      name: "Acceuil",
       to : "home__section"
   },
   {
-      name: "About Me",
+      name: "A propos de moi",
       to : "about__me__section"
   },
   {
-      name: "Skills",
+      name: "Compétences",
       to : "skills__section"
   },
   {
@@ -26,7 +26,7 @@ const navlinks = [
       to : "portfolio__section"
   },
   {
-      name: "Contact Me",
+      name: "Contactez-nous",
       to : "contact__me__section"
   },
 ];

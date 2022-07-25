@@ -1,10 +1,10 @@
 export const services = [
     {
-        title: 'FULLSTACK DEVELOPMENT',
+        title: 'SITE WEB COMPLET',
         plans: [
             {
                 id: 0,
-                title: 'Basic',
+                title: 'Basique',
                 advantagesIndexes:[
                     1, 3, 5  
                 ],
@@ -38,7 +38,7 @@ export const services = [
         ]
     },
     {
-        title: 'FRONTEND DEVELOPMENT',
+        title: 'FRONTEND UNIQUEMENT',
         plans: [
             {
                 id: 0,
@@ -65,7 +65,7 @@ export const services = [
         ]
     },
     {
-        title: 'WEB APIs DEVELOPMENT',
+        title: 'API RESTT',
         plans: [
             {
                 id: 0,
@@ -92,7 +92,7 @@ export const services = [
         ]
     },
     {
-        title: 'DESIGN',
+        title: 'DESIGN WEB',
         plans: [
             {
                 id: 0,

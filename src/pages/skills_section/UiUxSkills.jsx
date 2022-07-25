@@ -33,7 +33,7 @@ const UiUxSkills = ({expanded, handleChange}) => {
             >
               <MdDesignServices />
             </IconButton>
-            UI/UX
+            DESIGN
           </div>
         </AccordionSummary>
         <AccordionDetails

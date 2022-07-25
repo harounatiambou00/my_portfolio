@@ -32,7 +32,7 @@ const MobileDevSkills = ({expanded, handleChange}) => {
             >
               <MdDeveloperMode />
             </IconButton>
-            MOBILE DEVELOPMENT
+            APLICATIONS MOBILES(ANDROID/IOS)
           </div>
         </AccordionSummary>
         <AccordionDetails

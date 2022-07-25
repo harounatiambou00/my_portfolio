@@ -32,7 +32,7 @@ const BackEndSkills = ({expanded, handleChange}) => {
             >
               <FaServer />
             </IconButton>
-            WEB BACKEND
+            DU WEB C&Ocirc;T&Eacute; SERVEUR
           </div>
         </AccordionSummary>
         <AccordionDetails

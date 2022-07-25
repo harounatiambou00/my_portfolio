@@ -28,13 +28,13 @@ const Skills = () => {
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20 font-righteous'
       >
-        Skills
+        Compétences
       </h1>
 
       <h3
-          className='sm:text-4xl lg:text-2xl opacity-60 mb-2 font-righteous'
+          className='sm:text-2xl lg:text-2xl opacity-60 mb-2 font-righteous'
         >
-          My Strengths
+          Mes points forts
       </h3>
       <div
         className='sm:w-full lg:w-4/6 px-4 sm:mb-10 lg:mb-4 flex justify-around'
@@ -53,7 +53,7 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               1.
             </span>
-            Productivity
+            Productivité
           </h3>
         </div>
         <div
@@ -70,7 +70,7 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               2.
             </span>
-            Problem solving
+            Résolution de problèmes
           </h3>
         </div>
         <div
@@ -87,15 +87,15 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               3.
             </span>
-            Hard Work
+            Travail acharné
           </h3>
         </div>
       </div>
 
       <h3
-        className='sm:text-4xl lg:text-2xl opacity-60 font-righteous'
+        className='sm:text-2xl lg:text-2xl opacity-60 font-righteous text-center'
       >
-        Technologies I've been working with recently
+       Quelques technologies avec lesquelles j'ai travaillé récemment
       </h3>
       <FrontEndSkills expanded={expanded} handleChange={handleChange}/>
       <BackEndSkills expanded={expanded} handleChange={handleChange} />

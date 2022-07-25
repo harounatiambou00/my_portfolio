@@ -31,7 +31,7 @@ const AboutMe = () => {
         transition={{duration: 1}}
         className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
       >
-        About Me
+        &Agrave; propos de moi
       </motion.h1>
       <div
         className='flex sm:flex-col lg:flex-row justify-between items-center w-5/6 lg:h-4/6'
@@ -42,7 +42,7 @@ const AboutMe = () => {
           <p
             className='first-letter:font-splash sm:first-letter:text-5xl lg:first-letter:text-4xl sm:text-2xl lg:text-base font-normal first-letter:text-teal'
           >
-            Hi, my name is &nbsp;&nbsp;
+            Salut, je m'appelle &nbsp;&nbsp;
             <span
               className='font-righteous sm:text-2xl lg:text-lg text-teal tracking-wide'
             >
@@ -53,11 +53,10 @@ const AboutMe = () => {
           <p
             className='font-normal sm:text-2xl lg:text-base'
           >
-            A young student from <span className='text-teal font-kanit sm:text-2xl lg:text-lg font-medium'>NIGER</span> living in Monastir(Tunisia), who is passionate about IT.<br />
-            I'm currently an undergraduated student(3th year) at the university of Monastir, class of 2020-2023.<br />
-            I'm pursuing a bachelor in Software Engineering from which I'll be graduated by the end of August 2023 (if everything goes well).<br />
-            I'm also the CEO of <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, a small starup based in Niger which provides services such as WEBSITES development, Restful APIs development, Mobile Apps development, IT Consulting, and so on . . .<br />
-            I'm also in charge of the academic and social affairs at the Association of Nigerian(Niger) Students and Trainees in Monastir.
+            Un jeune étudiant <span className='text-teal font-kanit sm:text-2xl lg:text-lg font-medium'>Nigerien</span> résidant en Tunisie et surtout passioné d'informatique.
+            Je suis actuellement en troisième année de licence en génie logiciel à l' Université De Monastir en Tunisie.<br />
+            Je suis également le PDG de <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, une petite start-up basée au Niger qui fournit des services tels que le développement de SITES WEB, le développement d'API Restful, le développement d'applications mobiles, le conseil informatique, etc...<br />
+            Je suis aussi le chargé des affaires académiques et sociales de la section de Monastir de l'ANEST(Association des &Eacute;tudiants et Stagiaires Nigériens en Tunisie).
           </p>
           <div
             className='flex justify-center'
@@ -69,11 +68,11 @@ const AboutMe = () => {
               startIcon={<DownloadIcon />}
             >
               <a
-                href='https://drive.google.com/file/d/1Ef2_PLiuB_frMQM8GwN5JsOxx45mcpJr/view?usp=sharing'
+                href='https://drive.google.com/file/d/1WcX8IPjef1AzJ1h4ABO7Trc3fZHTXMUb/view?usp=sharing'
                 target="_blank"
                 rel='noreferrer'
               >
-                Download My Resume
+                Télecharger mon CV
               </a>
             </Button>
           </div>

@@ -18,7 +18,7 @@ const Home = () => {
         opacity: 1
       }}
       transition={{
-        duration: 3,
+        duration: 2,
       }}
     >
       <div
@@ -26,7 +26,7 @@ const Home = () => {
       >
         <Tooltip
           placement='top-start'
-          title="Fofo means 'Hello' in my native language."
+          title="Fofo veut dire 'Salut' dans ma langue natale."
           className='font-kanit cursor-pointer'
           TransitionComponent={Zoom}
           TransitionProps={{timeout: 300}}
@@ -39,7 +39,7 @@ const Home = () => {
           >
             <TypewriterComponent 
               options={{
-                strings: "Fofo, my name is",
+                strings: "Fofo, moi c'est",
                 autoStart: true,
                 cursor: "_", 
                 delay : 50
@@ -72,7 +72,7 @@ const Home = () => {
         >
           <TypewriterComponent 
             options={{
-              strings: "I create things related to the Web.",
+              strings: "Je crée des choses en rapport avec le web",
               autoStart: true,
               cursor: "_",
               delay: 50
@@ -87,7 +87,7 @@ const Home = () => {
         >
           <TypewriterComponent 
             options={{
-              strings: " I'm a software engineering student specialized in websites and mobile apps development.<br />\nCurrently, I'm also heading a small start-up named TiamTech.",
+              strings: "Je suis un étudiant en génie logiciel spécialisé dans le développement de sites Web et d'applications mobiles.<br />Actuellement, je dirige également une petite start-up nommée TiamTech.",
               autoStart: true,
               cursor: "_",
               delay: 20,
@@ -111,7 +111,7 @@ const Home = () => {
             href='#portfolio__section'
             className='sm:text-xl lg:text-base'
           >
-            Check out my recent works
+            Voir nos travaux récents
           </a>
         </Button>
         <Button
@@ -123,7 +123,7 @@ const Home = () => {
             href='#contact__me__section'
             className='sm:text-xl lg:text-base'
           >
-            Get in touch
+            Contactez-nous
           </a>
         </Button>
       </motion.div>

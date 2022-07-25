@@ -18,7 +18,7 @@ const ServicesButton = () => {
       <a href='#services__section'
         className={isDarkTheme? 'border-2 border-light hover:text-dark after:bg-light' : 'border-2 border-dark text-dark hover:text-light after:bg-dark'}
       >
-        <span>Services</span>
+        <span>Nos Services</span>
       </a>
     </motion.div>
   )

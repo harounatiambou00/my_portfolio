@@ -21,12 +21,12 @@ const Services = () => {
         <h1
           className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
         >
-          Our Services
+          Nos Services
         </h1>
         <h4
           className='text-2xl opacity-60'
         >
-          Find the best plan for your ...
+          Choisissez le plan qui vous convient.
         </h4>
         <div
           className='flex rounded-md mt-4 bg-dark dark:bg-darkElevation'
@@ -38,7 +38,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            Fullstack Development
+            SITE WEB COMPLET
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -47,7 +47,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            FrontEnd Development
+            FRONTEND UNIQUEMENT
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -56,7 +56,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            WEB APIs development
+            API Rest
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -65,7 +65,7 @@ const Services = () => {
             className='font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            WEB DESIGN
+            DESIGN WEB
           </Button>
         </div>
 

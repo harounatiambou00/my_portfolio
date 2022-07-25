@@ -1,6 +1,4 @@
 import React, {useState, useRef } from 'react';
-import { useContext } from 'react';
-import { ThemeContext } from '../../contexts/ThemeContext';
 
 import emailjs from '@emailjs/browser';
 
@@ -12,7 +10,6 @@ import {IconButton, TextField, Button, Snackbar, Alert} from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 const ContactMe = () => {
-  const {isDarkTheme} = useContext(ThemeContext);
   const form = useRef();
 
   const [sendEmailInProgress, setSendEmailInProgress] = useState(false); 
@@ -57,7 +54,7 @@ const ContactMe = () => {
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 font-righteous'
       >
-        Contact Us
+        Nous contacter
       </h1>
       <div
         className='flex sm:flex-col-reverse lg:flex-row sm:w-11/12 lg:w-10/12  bg-white drop-shadow-md rounded-md'
@@ -68,7 +65,7 @@ const ContactMe = () => {
           <h2
             className='sm:text-4xl lg:text-xl opacity-70 text-light font-righteous'
           >
-            Other channels
+            Autres Canaux
           </h2>
           <div>
             <div
@@ -144,7 +141,7 @@ const ContactMe = () => {
           <h2
             className='sm:text-4xl lg:text-xl opacity-70 text-dark font-righteous sm:rounded-t-md lg:rounded-r-md'
           >
-            Send me a message
+            Evoyez moi un message
           </h2>
           <div
             className='w-full sm:px-20 lg:px-0 mt-5'
@@ -154,7 +151,7 @@ const ContactMe = () => {
             >
             <TextField 
               fullWidth
-              label='First Name'
+              label='Prénom'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='firstName'
@@ -162,7 +159,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Last Name'
+              label='Nom'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='lastName'
@@ -170,7 +167,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Email'
+              label='Adresse email'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='email'
@@ -179,7 +176,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Phone Number'
+              label='Numéro de téléphone'
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='phoneNumber'
@@ -190,7 +187,7 @@ const ContactMe = () => {
             >
               <TextField 
                 fullWidth
-                label='Subject'
+                label='Objet'
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 name='subject'
@@ -199,7 +196,7 @@ const ContactMe = () => {
                 fullWidth
                 multiline
                 rows={4}
-                label='Subject'
+                label='Message'
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 name='message'
@@ -217,7 +214,7 @@ const ContactMe = () => {
               sx={sendEmailInProgress ? {display: 'none'} : {display: 'block'}}
               className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
             > 
-              Send
+              Envoyer
             </Button>
             <LoadingButton
               loading
@@ -226,7 +223,7 @@ const ContactMe = () => {
               sx={sendEmailInProgress ? {display: 'block'} : {display: 'none'}}
               className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
             >
-              SEND
+              Envoyer
             </LoadingButton>
           </div>
         </form>
@@ -243,7 +240,7 @@ const ContactMe = () => {
           sx={{ width: '100%' }}
           className='font-kanit'
         >
-          Your message has been sent successfully.<br />We'll reply you in next 24hours insha'allah.
+          Votre message a été envoyer avec succès<br />Nous vous répondrons dans les 24 hours qui suivent insha'allah.
         </Alert>
       </Snackbar>
       <Snackbar 
@@ -258,7 +255,7 @@ const ContactMe = () => {
           sx={{ width: '100%' }}
           className='font-kanit'
         >
-          Something went wrong retry please.
+          Quekque chose s'est mal passé, <br />vérifier votre connexion internet et réessayez q'il vous pla&icirc;t!.
         </Alert>
       </Snackbar>
     </div>

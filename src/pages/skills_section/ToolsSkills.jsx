@@ -32,7 +32,7 @@ const ToolsSkills = ({expanded, handleChange}) => {
             >
               <FaTools />
             </IconButton>
-            Tools
+            OUTILS DE DEVELOPPEMENT
           </div>
         </AccordionSummary>
         <AccordionDetails

@@ -18,7 +18,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
       >
         <h2>{type}</h2>
         {
-          level === 'Basic' && (
+          level === 'Basique' && (
             <span
               className='text-red-400 font-light'
             >
@@ -47,7 +47,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
         <h2
           className='font-light mt-2'
         >
-          {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / hour</sub></h2>
+          {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / h</sub></h2>
         <Button
           href="#contact__me__section"
           fullWidth
@@ -56,7 +56,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
           variant='contained'
           className={isDarkTheme? 'mt-2 text-dark':'mt-2 text-light'}
         >
-          GET IT
+          JE VEUX &Ccedil;A
         </Button>
       </div>
       <div
@@ -65,7 +65,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
         <h6
           className='font-light'
         >
-          WHAT'S INCLUDED
+          CE QUI EST INCLUS
         </h6>
         {
           advantagesIndexes.map((advantageIndex) => {

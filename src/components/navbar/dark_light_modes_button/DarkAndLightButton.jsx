@@ -24,7 +24,7 @@ const DarkAndLightButton = () => {
       <Tooltip
           arrow
           placement='bottom'
-          title={isDarkTheme? 'Turn on the light' : 'Turn off the light'}
+          title={isDarkTheme? 'Activer le mode jour' : 'Activer le mode nuit'}
           TransitionComponent={Zoom}
           TransitionProps={{ timeout: 600 }}
       >

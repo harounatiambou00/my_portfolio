@@ -14,12 +14,10 @@ export const projects = [
     {
         title: 'E-ILIMI',
         description: `
-            E-ILIMI is an e-commerce platform for book sales and purchases.
-            By books we mean numerical books or standard ones, all categories
-            combined.
-            In my natal language Ilimi stands for “Knowledge”.
-            With E-ILIMI anyone in my dear country NIGER, will be able to search
-            and order for the book he wants in two shakes of a lamb's tail.
+            E-ILIMI est une plateforme commerce en ligne pour la vente et l'achat de livres.
+            Par livres, nous voulons dire des livres numériques ou standards, de toutes les catégories (Manga, Developpement personnel, romans ...).
+            Avec E-ILIMI n'importe qui dans mon cher pays le NIGER, pourra rechercher
+            et commande le livre qu'il veut en deux temps trois mouvements.
         `,
         image: EIlimi,
         techologies: [
@@ -74,8 +72,8 @@ export const projects = [
     {
         title: 'Portfolio Website',
         description: `
-            It's my personnal website where anyone can get in touch with me and know more about me professionally.
-            You can also check out my recent work and the services that i offer.
+            C'est mon site personnel où n'importe qui peut entrer en contact avec moi et en savoir plus sur moi professionnellement.
+            Vous pouvez également consulter mes travaux récents et les services que j'offre.
         `,
         image: PersonalWebsite,
         techologies: [
@@ -171,9 +169,9 @@ export const projects = [
     {
         title: 'TiamTasks',
         description: `
-            TiamTasks is a task managment web application buit with Laravel 8.
-            With TiamTasks plan your day with SMART tasks to be doe by the end of the day.
-            It will help you to become more porductive in any aspect of your life.
+            TiamTasks est une application web de gestion de tâches construite avec Laravel 8.
+            Avec TiamTasks planifiez votre journée avec des tâches SMART à faire d'ici la fin de la journée.
+            Cela vous aidera à devenir plus productif dans tous les aspects de votre vie.
         `,        
         image: TiamTasks,
         techologies: [
@@ -208,8 +206,8 @@ export const projects = [
     {
         title: 'InfoSchool',
         description: `
-            InfoSchool is an e-learning platforms for beginners in the coding world.
-            You can find many high level courses from big e-learning companies such as OpenClassrooms. 
+            InfoSchool est une plateforme d'apprentissage en ligne pour les débutants dans le monde de la programmation.
+            Vous pouvez trouver de nombreux tutos de haute qualité de grandes sociétés d'apprentissage en ligne telles que OpenClassrooms.
         `,    
         image: Infoschool,
         techologies: [

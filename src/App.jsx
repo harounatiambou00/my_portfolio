@@ -68,7 +68,9 @@ const App = () => {
         <main
           className='text-dark dark:text-light bg-light dark:bg-dark'
         >
-          <LinkParticles />
+          {/*
+            <LinkParticles />
+          */}
           <Home />
           <AboutMe />
           <Skills />

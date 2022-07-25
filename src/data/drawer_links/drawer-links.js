@@ -7,17 +7,17 @@ import {HiOutlineMail} from 'react-icons/hi';
 
 export const drawerLinks = [
     {
-        title: 'Home',
+        title: 'Acceuil',
         signet: 'home__section',
         icon: <AiOutlineHome />
     },
     {
-        title: 'About Me',
+        title: 'A propos de moi',
         signet: 'about__me__section',
         icon: <BsPerson />
     },
     {
-        title: 'Skills',
+        title: 'Compétences',
         signet: 'skills__section',
         icon: <TiPlusOutline />
     },
@@ -32,12 +32,12 @@ export const drawerLinks = [
         icon: <BsFolderCheck />
     },
     {
-        title: 'Contact Me',
+        title: 'Contactez-nous',
         signet: 'contact__me__section',
         icon: <HiOutlineMail />
     },
     {
-        title: 'Services',
+        title: 'Nos Services',
         signet: 'services__section',
         icon: <AiOutlineGift />
     },

@@ -33,7 +33,7 @@ const FrontEndSkills = ({expanded, handleChange}) => {
             >
               <FaCode />
             </IconButton>
-            WEB FRONTEND
+            APPLICATIONS WEB
           </div>
         </AccordionSummary>
         <AccordionDetails

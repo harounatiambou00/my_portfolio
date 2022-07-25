@@ -63,7 +63,7 @@ const Education = () => {
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-10 font-righteous'
       >
-        Education
+        &Eacute;ducation
       </h1>
       <Box
         sx={{display: 'flex'}}
@@ -106,17 +106,17 @@ const Education = () => {
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-2'
               >
-                University of Monastir, Tunisia
+                University de Monastir, Tunisie
               </h1>
             </div>
             <div
               className='mt-4'
             >
               <p>
-                I'm currently an undergraduated student(3th year) at the university of Monastir, class of 2020-2023.<br />
-                I'm pursuing a bachelor in Software Engineering from which <br/>I'll be graduated by the end of August 2023 (if everything goes well).
+              Je suis actuellement étudiant en licence à l'université de Monastir, promotion 2020-2023.<br />
+              Je serai diplômé d'ici fin août 2023 (si tout se passe bien).
               </p>
-              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Awards</h4>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Prix</h4>
               <div
                 className='flex items-center'
               >
@@ -126,7 +126,7 @@ const Education = () => {
                   <BsCheckAll />
                 </IconButton>
                 <h4>
-                  Valedictorian of the first year with a grade of 15.66 over 20.
+                  Major de la promotion en première année.
                 </h4>
               </div>
               <div
@@ -138,7 +138,7 @@ const Education = () => {
                   <BsCheckAll />
                 </IconButton>
                 <h4>
-                  Valedictorian of the second year with a grade of 15.29 over 20.
+                  Major de la promotion en deuième année.
                 </h4>
               </div>
             </div>
@@ -167,10 +167,10 @@ const Education = () => {
               className='mt-4'
             >
               <p>
-                During this period of time, I was a a high school student at Manou Diatta a High School in NIGER my beloved country.<br />
-                I specialized in experimental sciences. 
+                Durant cette période, j'étais élève au Lycée Manou Diatta au NIGER mon cher pays.<br />
+                O&Uagrave; j'ai décroché mon bac D (Sciences expérimentales) avec la mention bien             
               </p>
-              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Awards</h4>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Prix</h4>
               <div
                 className='flex items-center'
               >
@@ -180,7 +180,7 @@ const Education = () => {
                   <BsCheckAll />
                 </IconButton>
                 <h4>
-                  Valedictorian of the last year with a grade of 14.2 over 20.
+                  Major de la promotion en dernière année.
                 </h4>
               </div>
             </div>
