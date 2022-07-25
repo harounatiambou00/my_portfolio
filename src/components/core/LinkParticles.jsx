@@ -31,7 +31,7 @@ const LinkParticles = () => {
             value: "inherit",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 500,
         interactivity: {
           events: {
             onClick: {
@@ -83,7 +83,7 @@ const LinkParticles = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 50,
           },
           opacity: {
             value: 0.3,
