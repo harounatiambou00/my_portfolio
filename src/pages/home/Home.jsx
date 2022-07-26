@@ -102,7 +102,7 @@ const Home = () => {
           <img 
             src={svg_programming} 
             alt="" 
-            className="sm:my-20 sm:h-auto lg:h-72"
+            className="sm:my-16 lg:my-0 sm:h-auto lg:h-72"
           />
         </div>
       </div>
