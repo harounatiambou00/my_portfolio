@@ -255,7 +255,7 @@ const ContactMe = () => {
           sx={{ width: '100%' }}
           className='font-kanit'
         >
-          Quekque chose s'est mal passé, <br />vérifier votre connexion internet et réessayez q'il vous pla&icirc;t!.
+          Quelque chose s'est mal passé, <br />vérifier votre connexion internet et réessayez s'il vous pla&icirc;t!.
         </Alert>
       </Snackbar>
     </div>

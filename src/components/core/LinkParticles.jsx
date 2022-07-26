@@ -83,7 +83,7 @@ const LinkParticles = () => {
               enable: true,
               area: 800,
             },
-            value: 50,
+            value: 20,
           },
           opacity: {
             value: 0.3,

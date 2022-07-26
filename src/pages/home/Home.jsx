@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 
 import TypewriterComponent from 'typewriter-effect';
 
+import svg_programming from '../../assets/illustrations/undraw_programming.svg';
+
 const Home = () => {
   return (
     <motion.div
@@ -22,79 +24,87 @@ const Home = () => {
       }}
     >
       <div
-        className='sm:text-4xl lg:text-2xl font-kanit font-light sm:pl-10 lg:pl-0'
+        className='sm:text-4xl lg:text-2xl font-kanit font-light flex sm:flex-col lg:flex-row items-center sm:px-4 lg:px-40'
       >
-        <Tooltip
-          placement='top-start'
-          title="Fofo veut dire 'Salut' dans ma langue natale."
-          className='font-kanit cursor-pointer'
-          TransitionComponent={Zoom}
-          TransitionProps={{timeout: 300}}
-        >
+        <div>
+          <Tooltip
+            placement='top-start'
+            title="Fofo veut dire 'Salut' dans ma langue natale."
+            className='font-kanit cursor-pointer'
+            TransitionComponent={Zoom}
+            TransitionProps={{timeout: 300}}
+          >
+            <motion.p
+              initial={{y: 20}}
+              animate={{y: 0}}
+              transition={{duration: 1}}
+              className='first-letter:font-splash sm:first-letter:text-6xl lg:first-letter:text-4xl first-letter:font-semibold text-teal'
+            >
+              <TypewriterComponent 
+                options={{
+                  strings: "Fofo, moi c'est",
+                  autoStart: true,
+                  cursor: "_", 
+                  delay : 50
+                }}
+              />
+            </motion.p>
+          </Tooltip>
           <motion.p
-            initial={{y: 20}}
-            animate={{y: 0}}
-            transition={{duration: 1}}
-            className='first-letter:font-splash sm:first-letter:text-6xl lg:first-letter:text-4xl first-letter:font-semibold text-teal'
+              initial={{y: 30}}
+              animate={{
+                y: 0,
+              }}
+              transition={{duration: 1}}
+              className='font-righteous sm:text-8xl lg:text-5xl opacity-90 text-teal'
           >
             <TypewriterComponent 
               options={{
-                strings: "Fofo, moi c'est",
+                strings: "Abdoul Wahabou<br />Harouna TIAMBOU.",
                 autoStart: true,
-                cursor: "_", 
-                delay : 50
+                cursor: "_",
+                delay: 50,
               }}
             />
           </motion.p>
-        </Tooltip>
-        <motion.p
-            initial={{y: 30}}
-            animate={{
-              y: 0,
-            }}
-            transition={{duration: 1}}
-            className='font-righteous sm:text-8xl lg:text-5xl opacity-90 text-teal'
-        >
-          <TypewriterComponent 
-            options={{
-              strings: "Abdoul Wahabou Harouna TIAMBOU.",
-              autoStart: true,
-              cursor: "_",
-              delay: 50,
-            }}
+          <motion.p
+              initial={{y: 40}}
+              animate={{y: 0}}
+              transition={{duration: 1}}
+              className='font-kanit sm:text-6xl lg:text-4xl opacity-70 font-medium'
+          >
+            <TypewriterComponent 
+              options={{
+                strings: "Je crée des choses en rapport avec le web",
+                autoStart: true,
+                cursor: "_",
+                delay: 50
+              }}
+            />
+          </motion.p>
+          <motion.p
+              initial={{y: 50}}
+              animate={{y: 0}}
+              transition={{duration: 1}}
+              className='sm:text-4xl lg:text-xl opacity-90 mt-7'
+          >
+            <TypewriterComponent 
+              options={{
+                strings: "Je suis un étudiant en génie logiciel spécialisé dans le développement de sites Web et d'applications mobiles.<br />Actuellement, je dirige également une petite start-up nommée TiamTech.",
+                autoStart: true,
+                cursor: "_",
+                delay: 20,
+              }}
+            />
+          </motion.p>
+        </div>
+        <div>
+          <img 
+            src={svg_programming} 
+            alt="" 
+            className="sm:my-20 sm:h-auto lg:h-72"
           />
-        </motion.p>
-        <motion.p
-            initial={{y: 40}}
-            animate={{y: 0}}
-            transition={{duration: 1}}
-            className='font-kanit sm:text-6xl lg:text-4xl opacity-70 font-medium'
-        >
-          <TypewriterComponent 
-            options={{
-              strings: "Je crée des choses en rapport avec le web",
-              autoStart: true,
-              cursor: "_",
-              delay: 50
-            }}
-          />
-        </motion.p>
-        <motion.p
-            initial={{y: 50}}
-            animate={{y: 0}}
-            transition={{duration: 1}}
-            className='sm:text-4xl lg:text-xl opacity-90 mt-7'
-        >
-          <TypewriterComponent 
-            options={{
-              strings: "Je suis un étudiant en génie logiciel spécialisé dans le développement de sites Web et d'applications mobiles.<br />Actuellement, je dirige également une petite start-up nommée TiamTech.",
-              autoStart: true,
-              cursor: "_",
-              delay: 20,
-            }}
-          />
-        </motion.p>
-        
+        </div>
       </div>
       <motion.div
         initial={{y: 60}}
@@ -111,7 +121,7 @@ const Home = () => {
             href='#portfolio__section'
             className='sm:text-xl lg:text-base'
           >
-            Voir nos travaux récents
+            Voir nos récents travaux
           </a>
         </Button>
         <Button
