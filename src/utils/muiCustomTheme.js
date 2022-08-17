@@ -89,6 +89,21 @@ export const theme = createTheme({
         },
         stackoverflowLogoColor: {
             main : '#fe7b0d'
-        }
+        },
+        vsCodeLogoColor : {
+            main: '#0076c6'
+        },
+        visualStudioLogoColor : {
+            main: '#411274'
+        },
+        postmanLogoColor : {
+            main: '#ff6c37'
+        },
+        androidLogoColor : {
+            main: '#3ad581'
+        },
+        linuxColor : {
+            main: '#000000'
+        },
     }
 });

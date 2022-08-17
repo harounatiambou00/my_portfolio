@@ -9,7 +9,9 @@ import {Tabs, Tab, Box, IconButton} from '@mui/material';
 import UM from '../../assets/images/university_of_monastir.png';
 import MD from '../../assets/images/manou_diatta.png';
 
-import {BsCheckAll} from 'react-icons/bs';
+import {BsCheckAll, BsDot} from 'react-icons/bs';
+
+import {courses} from '../../data/education/courses'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -112,10 +114,38 @@ const Education = () => {
             <div
               className='mt-4'
             >
-              <p>
-              Je suis actuellement étudiant en licence à l'université de Monastir, promotion 2020-2023.<br />
-              Je serai diplômé d'ici fin août 2023 (si tout se passe bien).
-              </p>
+              <h1
+                className='text-xl opacity-90'
+              >
+                Licence en Sciences de l'informatique : Génie Logiciels et Systemes d'Information
+              </h1>
+              <h1
+                className='text-xl opacity-70'
+              >
+                Novembre 2020 - Présent
+              </h1>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Centres d'intéret principaux</h4>
+              <div
+                className='grid grid-cols-4 gap-0'
+              >
+                {courses['fsm'].map((course) => {
+                  return (
+                    <div
+                      className='flex items-center'
+                    >
+                      <IconButton
+                        size='small'
+                        color='secondary'
+                      >
+                        <BsDot />
+                      </IconButton>
+                      <h4 className='text-sm'>
+                        {course}
+                      </h4>
+                    </div>
+                  );
+                })}
+              </div>
               <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Prix</h4>
               <div
                 className='flex items-center'
