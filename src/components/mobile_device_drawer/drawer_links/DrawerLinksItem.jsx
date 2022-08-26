@@ -3,8 +3,12 @@ import { ThemeContext } from '../../../contexts/ThemeContext';
 
 import {IconButton} from '@mui/material';
 
+
+import { useTranslation } from 'react-i18next';
+
 const DrawerLinksItem = ({title, signet, icon}) => {
     const {toggleMobileDeviceDrawer} = useContext(ThemeContext); 
+    const {t} = useTranslation();
   return (
     <div
         onClick={toggleMobileDeviceDrawer(false)}
@@ -12,18 +16,18 @@ const DrawerLinksItem = ({title, signet, icon}) => {
     >
         <a
             href={'#' + signet}
-            className={title === 'Services' || title === 'Nos Services' ?  'w-full flex justify-center items-center bg-dark text-light p-4 rounded-xl mt-20' : 'w-full flex items-center bg-white dark:bg-light p-4 rounded-full'}
+            className={title === 'services_link' ?  'w-full flex justify-center items-center bg-dark text-light p-4 rounded-xl mt-20' : 'w-full flex items-center bg-white dark:bg-light p-4 rounded-full'}
         >
             <IconButton
                 className='text-4xl mr-4'
-                color={title === 'Services' || title === 'Nos Services' ? 'warning' : 'secondary'}
+                color={title === 'services_link' ? 'warning' : 'secondary'}
             >
                 {icon}
             </IconButton>
             <p
                 className='text-4xl opacity-80'
             >
-                {title}
+                {t("navbar." + title)}
             </p>
         </a>
     </div>

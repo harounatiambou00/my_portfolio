@@ -11,7 +11,7 @@ import { SkillCard } from '../../components';
 import { mobileSkills } from '../../data/skills/mobile-skills';
 
 const MobileDevSkills = ({expanded, handleChange}) => {
-    const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, t} = useContext(ThemeContext);
   return (
     <Accordion 
         expanded={expanded === 'mobile-dev-panel'} 
@@ -32,7 +32,7 @@ const MobileDevSkills = ({expanded, handleChange}) => {
             >
               <MdDeveloperMode />
             </IconButton>
-            APLICATIONS MOBILES(ANDROID/IOS)
+            {t('skills_section.mobile_apps_development')}
           </div>
         </AccordionSummary>
         <AccordionDetails

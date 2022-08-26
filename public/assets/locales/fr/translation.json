@@ -1,0 +1,116 @@
+{
+    "navbar": {
+        "services_link": "Nos Services",
+        "home_link": "Acceuil",
+        "about_me_link": "A propos de moi",
+        "skills_link": "Compétences",
+        "education_link": "Education",
+        "portfolio_link": "Projets",
+        "contact_us_link": "Contactez-nous",
+        "dark_mode_toggle_tooltip_title": "Activer le mode nuit",
+        "light_mode_toggle_tooltip_title": "Activer le mode jour"
+    },
+    "home_section":{
+        "fofo_tooltip_title": "Fofo veut dire 'Salut' dans ma langue natale.",
+        "fofo_my_name_is": "Fofo, moi c'est",
+        "title": "Je crée des choses en rapport avec le web",
+        "description": "Je suis un jeune étudiant nigérien passionné d'informatique.<br />Actuellement, je suis en 3ème année de licence en génie logiciels <br />à la Faculté des Sciences de Monastir en Tunisie.<br />Je suis également à la tête d'une petite start-up nommée TiamTech,<br /> qui fournit des services informatiques tels que le développement de sites Web et d'applications mobiles.",
+        "recent_works_button_text": "Voir nos récents travaux",
+        "get_in_touch_button_text": "Contactez-nous"
+    },
+    "about_me_section": {
+        "title": "A propos de moi",
+        "introduction": "Salut, je m'appelle",
+        "a_young_student": "Un jeune étudiant",
+        "niger": "NIGERIEN",
+        "residing_in_tunisia_and_it_passionated": " résidant en Tunisie et surtout passioné d'informatique." ,
+        "currently_studies": "Je suis actuellement en troisième année de licence en génie logiciel & Systèmes d'Information à l' Université De Monastir en Tunisie.",
+        "also_the_founder_and_ceo_of": "Je suis également le fondateur & PDG de ",
+        "tiamtech_description": "une petite start-up basée au Niger fournissant des services tels que le développement de SITES WEB, le développement d'API Restful, le développement d'applications mobiles, etc...",
+        "anest_post": "Je suis aussi le chargé des affaires académiques et sociales de la section Monastir de l'ANEST(Association des Etudiants et Stagiaires Nigériens en Tunisie).",
+        "download_my_resume_button_text": "Télécharger mon cv"
+    },
+    "skills_section": {
+        "title": "Compétences",
+        "strengths_title": "Mes points forts",
+        "productivity": "Productivité",
+        "problem_solving": "Résolution de problèmes",
+        "hard_work": "Résolution de problèmes",
+        "technologies_title": "Quelques technologies avec lesquelles j'ai travaillé récemment",
+        "web_frontend": "WEB FRONTEND",
+        "web_backend": "WEB BACKEND",
+        "mobile_apps_development": "DEVELOPPPEMENT MOBILE(ANDROID/IOS)",
+        "design_web": "WEB DESIGN",
+        "develoment_tools": "OUTILS DE DEVELOPPPEMENT"
+    },
+    "education_section": {
+        "title": "Education",
+        "university_of_monastir": {
+            "name": "University De Monastir, Tunisie",
+            "subtitle": "Licence en Sciences de l'informatique : Génie Logiciels et Systemes d'Information",
+            "date": "November 2020 - Présent",
+            "courses_title": "Principaux sujets",
+            "courses": {
+                "algorithmics": "Algorithmique et structure de données",
+                "web_development": "Développement Web",
+                "mobile_apps_development": "Développement d'applications",
+                "networks": "Réseaux",
+                "linear_algebra": "Algèbre linéaire",
+                "statistics_probabilities": "Statistiques & Probabilités",
+                "machine_learning": "Machine Learning(ML)",
+                "internet_of_things": "Internet Des Objets(IOT)",
+                "web_services_and_soa_architecture": "Services Web and Architecture SOA",
+                "cloud_and_big_data": "Cloud & Big Data"
+            }
+        },
+        "manou_diatta": {
+            "name": "Manou Diatta",
+            "subtitle": "Lycée : Option série Sciences expérimentales",
+            "date": "Décembre 2017 - Aout 2020"
+            
+        },
+        "valedictorian": "Major de promotion",
+        "price": "Prix"
+    },
+    "portfolio_section":{
+        "title": "Portfolio",
+        "subtitle": "Voici quelques projets sur lesquels j'ai travaillé récemment."
+    },
+    "services_section":{
+        "title": "Nos Services",
+        "subtitle": "Le choix vous appartient",
+        "fullstack_website": "SITE WEB COMPLET",
+        "frontend_website": "SITE WEB VITRINE",
+        "restful_api": "API REST",
+        "design_web": "DESIGN WEB",
+        "basic": "Basique",
+        "standard": "Standard",
+        "premium": "Premium",
+        "get_it": "Je veux ça",
+        "what_is_included": "CE QUI EST INCLUS",
+        "advantages": {
+            "free_hosting": "Hébergement gratuit",
+            "free_maintenance": "Maintenance gratuite",
+            "choose_your_techonologies": "Choisissez les technologies à utiliser",
+            "one_year_warranty": "1 an de grarantie de sucurité",
+            "google_maps": "Intégration de l'API Google Maps",
+            "responsive_website": "Site entièrement réactif (sur téléphone, pc, tv...)",
+            "progressive_web_app": "Progressive WEB APP (PWA)",
+            "life_time_warranty": "Garantie de sécurité infinie"
+        }
+    },
+    "contact_me_section":{
+        "title": "Nous Contacter",
+        "send_me_a_message": "Envoyer moi un message",
+        "other_ways": "Autres canaux",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email_address": "Adresse email",
+        "phoneNumber": "Numéro téléphone",
+        "subject": "Objet",
+        "message": "Message",
+        "send": "Envoyer",
+        "success_message": "Votre message a été envoyer avec succès\nNous vous répondrons dans les 24 heures qui suivent insha'allah.",
+        "error_message": "Quelque chose s'est mal passé, \nVeuillez vérifier votre connexion internet et réessayez."
+    }
+}

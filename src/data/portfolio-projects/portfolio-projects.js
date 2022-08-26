@@ -13,12 +13,20 @@ import Infoschool from '../../assets/images/projects/infoschool.png';
 export const projects = [
     {
         title: 'E-ILIMI',
-        description: `
-            E-ILIMI est une plateforme commerce en ligne pour la vente et l'achat de livres.
-            Par livres, nous voulons dire des livres numériques ou standards, de toutes les catégories (Manga, Developpement personnel, romans ...).
-            Avec E-ILIMI n'importe qui dans mon cher pays le NIGER, pourra rechercher
-            et commande le livre qu'il veut en deux temps trois mouvements.
-        `,
+        description: {
+            fr: `
+                E-ILIMI est une plateforme commerce en ligne pour la vente et l'achat de livres.
+                Par livres, nous voulons dire des livres numériques ou standards, de toutes les catégories (Manga, Developpement personnel, romans ...).
+                Avec E-ILIMI n'importe qui dans mon cher pays le NIGER, pourra rechercher
+                et commande le livre qu'il veut en deux temps trois mouvements.
+            `,
+            en: `
+                E-ILIMI is an online commerce platform for the sale and purchase of books.
+                By books, we mean digital or standard books, of all categories (Manga, Personal development, novels ...).
+                With E-ILIMI anyone in my dear country NIGER, will be able to search
+                and orders the book he wants in two shakes of a lamb's tale.
+            `,
+        },
         image: EIlimi,
         techologies: [
             {

@@ -6,7 +6,7 @@ import './services_button.css';
 import { motion } from 'framer-motion';
 
 const ServicesButton = () => {
-  const {isDarkTheme} = useContext(ThemeContext);
+  const {isDarkTheme, t} = useContext(ThemeContext);
 
   return (
     <motion.div 
@@ -18,7 +18,7 @@ const ServicesButton = () => {
       <a href='#services__section'
         className={isDarkTheme? 'border-2 border-light hover:text-dark after:bg-light' : 'border-2 border-dark text-dark hover:text-light after:bg-dark'}
       >
-        <span>Nos Services</span>
+        <span>{t('navbar.services_link')}</span>
       </a>
     </motion.div>
   )

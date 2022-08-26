@@ -2,6 +2,8 @@ import React from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
+import { useTranslation } from 'react-i18next';
+
 import PropTypes from 'prop-types';
 
 import {Tabs, Tab, Box, IconButton} from '@mui/material';
@@ -9,7 +11,8 @@ import {Tabs, Tab, Box, IconButton} from '@mui/material';
 import UM from '../../assets/images/university_of_monastir.png';
 import MD from '../../assets/images/manou_diatta.png';
 
-import {BsCheckAll, BsDot} from 'react-icons/bs';
+import {BsDot} from 'react-icons/bs';
+import {FaGraduationCap} from 'react-icons/fa';
 
 import {courses} from '../../data/education/courses'
 
@@ -57,19 +60,21 @@ const Education = () => {
     setValue(newValue);
   };
 
+  const {t} = useTranslation();
+
   return (
     <div 
-      className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 lg:pt-0'
+      className='app__section sm:h-auto items-center justify-center sm:pt-48 lg:pt-16'
       id='education__section'
     >
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-0 lg:mt-10 font-righteous'
       >
-        &Eacute;ducation
+        {t("education_section.title")}
       </h1>
       <Box
         sx={{display: 'flex'}}
-        className='sm:w-5/6 lg:w-5/6 font-kanit bg-white dark:bg-darkElevation'
+        className='sm:w-5/6 lg:w-5/6 font-kanit bg-light dark:bg-darkElevation'
       >
         <Tabs
           orientation="vertical"
@@ -108,7 +113,7 @@ const Education = () => {
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-2'
               >
-                University de Monastir, Tunisie
+                {t("education_section.university_of_monastir.name")}
               </h1>
             </div>
             <div
@@ -117,16 +122,18 @@ const Education = () => {
               <h1
                 className='text-xl opacity-90'
               >
-                Licence en Sciences de l'informatique : Génie Logiciels et Systemes d'Information
+                {t("education_section.university_of_monastir.subtitle")}
               </h1>
               <h1
-                className='text-xl opacity-70'
+                className='text-md opacity-70'
               >
-                Novembre 2020 - Présent
+                {t("education_section.university_of_monastir.date")}
               </h1>
-              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Centres d'intéret principaux</h4>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>
+                {t("education_section.university_of_monastir.courses_title")}
+              </h4>
               <div
-                className='grid grid-cols-4 gap-0'
+                className='grid grid-cols-2'
               >
                 {courses['fsm'].map((course) => {
                   return (
@@ -140,35 +147,23 @@ const Education = () => {
                         <BsDot />
                       </IconButton>
                       <h4 className='text-sm'>
-                        {course}
+                        {t("education_section.university_of_monastir.courses." + course)}
                       </h4>
                     </div>
                   );
                 })}
               </div>
-              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Prix</h4>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>{t("education_section.price")}</h4>
               <div
                 className='flex items-center'
               >
                 <IconButton
                   color='secondary'
                 >
-                  <BsCheckAll />
+                  <FaGraduationCap />
                 </IconButton>
                 <h4>
-                  Major de la promotion en première année.
-                </h4>
-              </div>
-              <div
-                className='flex items-center'
-              >
-                <IconButton
-                  color='secondary'
-                >
-                  <BsCheckAll />
-                </IconButton>
-                <h4>
-                  Major de la promotion en deuième année.
+                {t("education_section.valedictorian")}
                 </h4>
               </div>
             </div>
@@ -189,31 +184,37 @@ const Education = () => {
               <h1
                 className='sm:text-3xl lg:text-xl opacity-80 ml-4'
               >
-                CSP Manou Diatta, NIGER
+                {t("education_section.manou_diatta.name")}
               </h1>
             </div>
-          </div>
-          <div
+            <div
               className='mt-4'
             >
-              <p>
-                Durant cette période, j'étais élève au Lycée Manou Diatta au NIGER mon cher pays.<br />
-                O&Uagrave; j'ai décroché mon bac D (Sciences expérimentales) avec la mention bien             
-              </p>
-              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>Prix</h4>
+              <h1
+                className='text-xl opacity-90'
+              >
+                {t("education_section.manou_diatta.subtitle")}
+              </h1>
+              <h1
+                className='text-md opacity-70'
+              >
+                {t("education_section.manou_diatta.date")}
+              </h1>
+              <h4 className='sm:text-xl lg:text-lg opacity-80 mt-4'>{t("education_section.price")}</h4>
               <div
                 className='flex items-center'
               >
                 <IconButton
                   color='secondary'
                 >
-                  <BsCheckAll />
+                  <FaGraduationCap />
                 </IconButton>
                 <h4>
-                  Major de la promotion en dernière année.
+                {t("education_section.valedictorian")}
                 </h4>
               </div>
             </div>
+          </div>
         </TabPanel>
       </Box>
     </div>

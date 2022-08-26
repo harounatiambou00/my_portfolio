@@ -8,6 +8,7 @@ import MenuButton from './menu_button/MenuButton';
 import Brand from './brand/Brand';
 import ServicesButton from './services_button/ServicesButton';
 import Navlinks from './navlinks/Navlinks';
+import LanguageSelector from './language-selector/LanguageSelector';
 
 import DarkAndLightButton from './dark_light_modes_button/DarkAndLightButton';
 
@@ -44,6 +45,7 @@ const Navbar = (props) => {
                 <ServicesButton />
               </div>
               <DarkAndLightButton />
+              <LanguageSelector />
           </div>
         </Toolbar>
       </AppBar>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 import Img from '../../assets/images/Me.png'
 
@@ -10,7 +11,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import {motion} from 'framer-motion';
 
 const AboutMe = () => {
-
+  const {t} = useContext(ThemeContext);
   return (
     <motion.div 
       className='app__section sm:h-screen lg:h-screen items-center justify-center sm:pt-48 lg:pt-4 bg-light dark:bg-dark'
@@ -31,7 +32,7 @@ const AboutMe = () => {
         transition={{duration: 1}}
         className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
       >
-        &Agrave; propos de moi
+        {t("about_me_section.title")}
       </motion.h1>
       <div
         className='flex sm:flex-col lg:flex-row justify-between items-center w-5/6 lg:h-4/6'
@@ -46,17 +47,17 @@ const AboutMe = () => {
             <span
               className='font-righteous sm:text-2xl lg:text-lg text-teal tracking-wide'
             >
-              Abdoul Wahabou Harouna Tiambou
+              Abdoul-Wahabou Harouna TAMBOU
             </span>
             .
           </p>
           <p
             className='font-normal sm:text-2xl lg:text-base'
           >
-            Un jeune étudiant <span className='text-teal font-kanit sm:text-2xl lg:text-lg font-medium'>Nigerien</span> résidant en Tunisie et surtout passioné d'informatique.
-            Je suis actuellement en troisième année de licence en génie logiciel à l' Université De Monastir en Tunisie.<br />
-            Je suis également le PDG de <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH LLC</span>, une petite start-up basée au Niger qui fournit des services tels que le développement de SITES WEB, le développement d'API Restful, le développement d'applications mobiles, le conseil informatique, etc...<br />
-            Je suis aussi le chargé des affaires académiques et sociales de la section de Monastir de l'ANEST(Association des &Eacute;tudiants et Stagiaires Nigériens en Tunisie).
+            {t("about_me_section.a_young_student")} <span className='text-teal font-kanit sm:text-2xl lg:text-lg font-medium'>{t("about_me_section.niger")}</span> {t("about_me_section.residing_in_tunisia_and_it_passionated")}<br />
+            {t("about_me_section.currently_studies")}<br />
+            {t("about_me_section.also_the_founder_and_ceo_of")} <span className='sm:text-2xl lg:text-lg font-righteous tracking-wide text-teal hover:underline cursor-pointer'>TIAMTECH CO</span>, {t("about_me_section.tiamtech_description")}<br />
+            {t("about_me_section.anest_post")}
           </p>
           <div
             className='flex justify-center'
@@ -72,7 +73,7 @@ const AboutMe = () => {
                 target="_blank"
                 rel='noreferrer'
               >
-                Télecharger mon CV
+                {t("about_me_section.download_my_resume_button_text")}
               </a>
             </Button>
           </div>

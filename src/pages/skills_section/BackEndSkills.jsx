@@ -11,7 +11,7 @@ import { SkillCard } from '../../components';
 import {backendSkills} from '../../data/skills/backend-skills';
 
 const BackEndSkills = ({expanded, handleChange}) => {
-    const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, t} = useContext(ThemeContext);
   return (
     <Accordion 
         expanded={expanded === 'backend-panel'} 
@@ -32,7 +32,7 @@ const BackEndSkills = ({expanded, handleChange}) => {
             >
               <FaServer />
             </IconButton>
-            DU WEB C&Ocirc;T&Eacute; SERVEUR
+            {t('skills_section.web_backend')}
           </div>
         </AccordionSummary>
         <AccordionDetails

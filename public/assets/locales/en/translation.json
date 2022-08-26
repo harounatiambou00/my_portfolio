@@ -1,0 +1,115 @@
+{
+    "navbar":{
+        "services_link": "Our Services",
+        "home_link": "Home",
+        "about_me_link": "About Me",
+        "skills_link": "Skills",
+        "education_link": "Education",
+        "portfolio_link": "Portfolio",
+        "contact_us_link": "Get in touch",
+        "dark_mode_toggle_tooltip_title": "enable dark mode",
+        "light_mode_toggle_tooltip_title": "enable light mode"
+    },
+    "home_section":{
+        "fofo_tooltip_title": "Fofo means 'Hello' in my native language.",
+        "fofo_my_name_is": "Fofo, I'm",
+        "title": "I build things related to the web.",
+        "description": "I am a young student from Niger who is passionate about IT.<br />Currently, I am preparing a bachelor degree in software engineering at the Faculty of Sciences of Monastir in Tunisia.<br />I'm also heading a small start-up named TiamTech which provides IT services such as Website & Mobile Applications development and IT consulting.",
+        "recent_works_button_text": "Checkout my recent works",
+        "get_in_touch_button_text": "Get in touch"
+    },
+    "about_me_section": {
+        "title": "About Me",
+        "introduction": "Hello, my name is",
+        "a_young_student": "A young student from",
+        "niger": "NIGER",
+        "residing_in_tunisia_and_it_passionated": "residing in Tunisia and above all passionate about IT." ,
+        "currently_studies": "I am currently in the third year(final) of a software engineering bachelor at the University of Monastir in Tunisia.",
+        "also_the_founder_and_ceo_of": "I'm also the founder and CEO of ",
+        "tiamtech_description": "a small start-up based in Niger that provides services such as WEBSITES development, Restful API development, mobile application development, IT consulting, etc...",
+        "anest_post": "I am also in charge of academic and social affairs for the Monastir section of ANEST (Association of Nigerien Students and Trainees in Tunisia).",
+        "download_my_resume_button_text": "Download my resume"
+    },
+    "skills_section": {
+        "title": "Skills",
+        "strengths_title": "My Strengths",
+        "productivity": "Productivity",
+        "problem_solving": "Problem Solving",
+        "hard_work": "Hard work",
+        "technologies_title": "Some technologies I have worked with recently",
+        "web_frontend": "WEB FRONTEND",
+        "web_backend": "WEB BACKEND",
+        "mobile_apps_development": "MOBILE APPS DEVELOPMENT(ANDROID/IOS)",
+        "design_web": "WEB DESIGN",
+        "develoment_tools": "DEVELOPMENT TOOLS"
+    },
+    "education_section": {
+        "title": "Education",
+        "university_of_monastir": {
+            "name": "University Of Monastir, Tunisia",
+            "subtitle": "Bachelor of Sciences(BSc) in Computer Science : Software Engineering",
+            "date": "November 2020 - Now",
+            "courses_title": "Major Subjects",
+            "courses": {
+                "algorithmics": "Algorithmics & Data Structures",
+                "web_development": "Web Development",
+                "mobile_apps_development": "Mobile APPS Development",
+                "networks": "Networks",
+                "linear_algebra": "Linear Algebra",
+                "statistics_probabilities": "Statistics/Probabilities",
+                "machine_learning": "Machine Learning(ML)",
+                "internet_of_things": "Internet Of Things(IOT)",
+                "web_services_and_soa_architecture": "Web Services and SOA Architecture",
+                "cloud_and_big_data": "Cloud & Big Data"
+            }
+        },
+        "manou_diatta": {
+            "name": "Manou Diatta, Niger",
+            "subtitle": "High School : Diploma in Sciences",
+            "date": "December 2017 - August 2020"
+        },
+        "valedictorian": "Valedictorian",
+        "price": "Awards"
+    },
+    "portfolio_section":{
+        "title": "Portfolio",
+        "subtitle": "Here are some projects I've been working on recently."
+    },
+    "services_section":{
+        "title": "Our Services",
+        "subtitle": "Choose the plan that suits you",
+        "fullstack_website": "FULLSTACK WEBSITE",
+        "frontend_website": "FRONTEND ONLY",
+        "restful_api": "API REST",
+        "design_web": "WEB DESIGN",
+        "basic": "Basic",
+        "standard": "Standard",
+        "premium": "Premium",
+        "get_it": "GET IT",
+        "what_is_included": "WHAT'S INCLUDED",
+        "advantages": {
+            "free_hosting": "Free hosting",
+            "free_maintenance": "Free maintenance",
+            "choose_your_techonologies": "Choose the technologies to use",
+            "one_year_warranty": "1 year security warranty",
+            "google_maps": "Google Maps API integration",
+            "responsive_website": "Fully responsive website (on phone, pc, tv...)",
+            "progressive_web_app": "Progressive WEB APP (PWA)",
+            "life_time_warranty": "All time security warranty"
+        }
+    },
+    "contact_me_section":{
+        "title": "Get in touch",
+        "send_me_a_message": "Send me a message",
+        "other_ways": "Other ways",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email_address": "Email",
+        "phoneNumber": "Phone number",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send",
+        "success_message": "Your message has been sent successfully \nWe will respond to you within 24 hours insha'allah.",
+        "error_message": "Something went wrong, please \ncheck your internet connection and try again!."
+    }
+}

@@ -6,9 +6,12 @@ import {Button} from '@mui/material';
 import DoneIcon from '@mui/icons-material/Done';
 import { advantages } from '../advantages';
 
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) => {
   const {isDarkTheme} = useContext(ThemeContext);
+  const {t} = useTranslation();
   return (
     <div
       className={isDarkTheme ? 'bg-darkElevation rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0': 'border-2 border-dark rounded-md sm:mx-40 lg:mx-0 sm:mt-10 lg:mt-0'}
@@ -16,38 +19,47 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
       <div
         className='p-5'
       >
-        <h2>{type}</h2>
+        <h2>{t("services_section." + type)}</h2>
         {
-          level === 'Basique' && (
+          level === 'basic' && (
             <span
               className='text-red-400 font-light'
             >
-              {level}
+              {t("services_section." + level)}
             </span>
           )
         }
         {
-          level === 'Standard' && (
+          level === 'standard' && (
             <span
               className='text-orange-400 font-light'
             >
-              {level}
+              {t("services_section." + level)}
             </span>
           )
         }
         {
-          level === 'Premium' && (
+          level === 'premium' && (
             <span
               className='text-green-600 font-light'
             >
-              {level}
+              {t("services_section." + level)}
             </span>
           )
         }
-        <h2
-          className='font-light mt-2'
-        >
-          {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / h</sub></h2>
+          {
+            i18next.language === 'fr' ? 
+              <h2
+                className='font-light mt-2'
+              >
+                {pricePerHour['FCFA']} FCFA<sub className='opacity-70'> / h</sub>
+              </h2>: 
+              <h2
+                className='font-base mt-2'
+              >
+                $ {pricePerHour['USD']}<sub className='opacity-70'> / h</sub>
+              </h2>
+          }
         <Button
           href="#contact__me__section"
           fullWidth
@@ -56,7 +68,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
           variant='contained'
           className={isDarkTheme? 'mt-2 text-dark':'mt-2 text-light'}
         >
-          JE VEUX &Ccedil;A
+          {t("services_section.get_it")}
         </Button>
       </div>
       <div
@@ -65,7 +77,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
         <h6
           className='font-light'
         >
-          CE QUI EST INCLUS
+          {t("services_section.what_is_included")}
         </h6>
         {
           advantagesIndexes.map((advantageIndex) => {
@@ -75,7 +87,7 @@ const PlanCard = ({type, level, pricePerHour, advantagesIndexes, serviceType}) =
                 <span
                   className='font-light text-sm ml-4'
                 >
-                  {advantages[serviceType][advantageIndex]}
+                  {t("services_section.advantages." + advantages[serviceType][advantageIndex])}
                 </span>
               </div>
             );

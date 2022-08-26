@@ -12,7 +12,7 @@ import { SkillCard } from '../../components';
 import {frontendSkills} from '../../data/skills/frontend-skills';
 
 const FrontEndSkills = ({expanded, handleChange}) => {
-    const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, t} = useContext(ThemeContext);
   return (
     <Accordion 
         expanded={expanded === 'frontend-panel'} 
@@ -33,7 +33,7 @@ const FrontEndSkills = ({expanded, handleChange}) => {
             >
               <FaCode />
             </IconButton>
-            APPLICATIONS WEB
+            {t('skills_section.web_frontend')}
           </div>
         </AccordionSummary>
         <AccordionDetails

@@ -9,10 +9,14 @@ import {FiGithub, FiTwitter, FiFacebook, FiLinkedin} from 'react-icons/fi'
 import {IconButton, TextField, Button, Snackbar, Alert} from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
+import { useTranslation } from 'react-i18next';
+
 const ContactMe = () => {
   const form = useRef();
 
   const [sendEmailInProgress, setSendEmailInProgress] = useState(false); 
+
+  const {t} = useTranslation();
 
   const sendEmail = async (e) => {
     setInterval(30000);
@@ -54,7 +58,7 @@ const ContactMe = () => {
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 font-righteous'
       >
-        Nous contacter
+        {t("contact_me_section.title")}
       </h1>
       <div
         className='flex sm:flex-col-reverse lg:flex-row sm:w-11/12 lg:w-10/12  bg-white drop-shadow-md rounded-md'
@@ -65,7 +69,7 @@ const ContactMe = () => {
           <h2
             className='sm:text-4xl lg:text-xl opacity-70 text-light font-righteous'
           >
-            Autres Canaux
+            {t("contact_me_section.other_ways")}
           </h2>
           <div>
             <div
@@ -141,7 +145,7 @@ const ContactMe = () => {
           <h2
             className='sm:text-4xl lg:text-xl opacity-70 text-dark font-righteous sm:rounded-t-md lg:rounded-r-md'
           >
-            Evoyez moi un message
+            {t("contact_me_section.send_me_a_message")}
           </h2>
           <div
             className='w-full sm:px-20 lg:px-0 mt-5'
@@ -151,7 +155,7 @@ const ContactMe = () => {
             >
             <TextField 
               fullWidth
-              label='Prénom'
+              label={t("contact_me_section.firstName")}
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='firstName'
@@ -159,7 +163,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Nom'
+              label={t("contact_me_section.lastName")}
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='lastName'
@@ -167,7 +171,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Adresse email'
+              label={t("contact_me_section.email_address")}
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='email'
@@ -176,7 +180,7 @@ const ContactMe = () => {
             />
             <TextField 
               fullWidth
-              label='Numéro de téléphone'
+              label={t("contact_me_section.phoneNumber")}
               inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
               name='phoneNumber'
@@ -187,7 +191,7 @@ const ContactMe = () => {
             >
               <TextField 
                 fullWidth
-                label='Objet'
+                label={t("contact_me_section.subject")}
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 name='subject'
@@ -196,7 +200,7 @@ const ContactMe = () => {
                 fullWidth
                 multiline
                 rows={4}
-                label='Message'
+                label={t("contact_me_section.message")}
                 inputProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 InputLabelProps={{sx:{fontFamily: "'Kanit', sans-serif"}}}
                 name='message'
@@ -214,7 +218,7 @@ const ContactMe = () => {
               sx={sendEmailInProgress ? {display: 'none'} : {display: 'block'}}
               className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
             > 
-              Envoyer
+              {t("contact_me_section.send")}
             </Button>
             <LoadingButton
               loading
@@ -223,7 +227,7 @@ const ContactMe = () => {
               sx={sendEmailInProgress ? {display: 'block'} : {display: 'none'}}
               className='font-kanit tracking-wider sm:w-2/4 sm:mt-5 lg:mt-0 lg:w-auto'
             >
-              Envoyer
+              {t("contact_me_section.send")}
             </LoadingButton>
           </div>
         </form>
@@ -237,10 +241,10 @@ const ContactMe = () => {
         <Alert 
           onClose={handleCloseSuccessSnackbar} 
           severity="success" 
-          sx={{ width: '100%' }}
+          sx={{ width: '15%%' }}
           className='font-kanit'
         >
-          Votre message a été envoyer avec succès<br />Nous vous répondrons dans les 24 hours qui suivent insha'allah.
+          {t("contact_me_section.success_message")}
         </Alert>
       </Snackbar>
       <Snackbar 
@@ -252,10 +256,10 @@ const ContactMe = () => {
         <Alert 
           onClose={handleCloseErrorSnackbar} 
           severity="error" 
-          sx={{ width: '100%' }}
+          sx={{ width: '15%' }}
           className='font-kanit'
         >
-          Quelque chose s'est mal passé, <br />vérifier votre connexion internet et réessayez s'il vous pla&icirc;t!.
+          {t("contact_me_section.error_message")}
         </Alert>
       </Snackbar>
     </div>

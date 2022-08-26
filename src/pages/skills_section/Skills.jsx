@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 import FrontEndSkills from './FrontEndSkills';
 import BackEndSkills from './BackEndSkills';
@@ -20,6 +21,8 @@ const Skills = () => {
     setExpanded(isExpanded ? panel : false);
   };
 
+  const {t} = useContext(ThemeContext);
+
   return (
     <div 
       className='app__section sm:h-auto items-center justify-center sm:pt-10 lg:pt-0'
@@ -28,13 +31,13 @@ const Skills = () => {
       <h1
         className='sm:text-6xl lg:text-4xl opacity-80 mb-4 sm:mt-20 font-righteous'
       >
-        Compétences
+        {t('skills_section.title')}
       </h1>
 
       <h3
           className='sm:text-2xl lg:text-2xl opacity-60 mb-2 font-righteous'
         >
-          Mes points forts
+          {t('skills_section.strengths_title')}
       </h3>
       <div
         className='sm:w-full lg:w-4/6 px-4 sm:mb-10 lg:mb-4 flex justify-around'
@@ -53,7 +56,7 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               1.
             </span>
-            Productivité
+            {t('skills_section.productivity')}
           </h3>
         </div>
         <div
@@ -70,7 +73,7 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               2.
             </span>
-            Résolution de problèmes
+            {t('skills_section.problem_solving')}
           </h3>
         </div>
         <div
@@ -87,7 +90,7 @@ const Skills = () => {
             <span className='text-teal text-2xl mr-2 font-righteous'>
               3.
             </span>
-            Travail acharné
+            {t('skills_section.hard_work')}
           </h3>
         </div>
       </div>
@@ -95,7 +98,7 @@ const Skills = () => {
       <h3
         className='sm:text-2xl lg:text-2xl opacity-60 font-righteous text-center'
       >
-       Quelques technologies avec lesquelles j'ai travaillé récemment
+       {t('skills_section.technologies_title')}
       </h3>
       <FrontEndSkills expanded={expanded} handleChange={handleChange}/>
       <BackEndSkills expanded={expanded} handleChange={handleChange} />

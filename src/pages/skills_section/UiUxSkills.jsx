@@ -12,7 +12,7 @@ import { SkillCard } from '../../components';
 import { uiUxSkills } from '../../data/skills/ui-ux-skills';
 
 const UiUxSkills = ({expanded, handleChange}) => {
-    const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, t} = useContext(ThemeContext);
   return (
     <Accordion 
         expanded={expanded === 'design-panel'} 
@@ -33,7 +33,7 @@ const UiUxSkills = ({expanded, handleChange}) => {
             >
               <MdDesignServices />
             </IconButton>
-            DESIGN
+            {t('skills_section.design_web')}
           </div>
         </AccordionSummary>
         <AccordionDetails

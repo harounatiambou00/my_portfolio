@@ -11,6 +11,8 @@ import { Navbar, SocialMediasIcons, MobileDeviceDrawer, LinkParticles, Footer } 
 
 import {Toolbar} from '@mui/material';
 
+import { useTranslation } from 'react-i18next';
+
 const App = () => {
   /**
    * The isDarkTheme state will help us to toggle between light and dark themes.
@@ -54,8 +56,11 @@ const App = () => {
     setmobileDrawerIsOpen(value)
   }
 
+  //translation hook from i18Next
+  const {t} = useTranslation();
+
   return (
-    <ThemeContext.Provider value={{isDarkTheme, setIsDarkTheme, mobileDrawerIsOpen, toggleMobileDeviceDrawer}}>
+    <ThemeContext.Provider value={{isDarkTheme, setIsDarkTheme, mobileDrawerIsOpen, toggleMobileDeviceDrawer, t}}>
       <div
         id='app'
         className='bg-light dark:bg-dark'

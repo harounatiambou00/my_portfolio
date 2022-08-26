@@ -12,26 +12,25 @@ import { motion } from 'framer-motion';
 
 
 const DarkAndLightButton = () => {
-  const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+  const {isDarkTheme, setIsDarkTheme, t} = useContext(ThemeContext);
 
   return (
     <motion.div
       initial={{y: -100}}
       animate={{y: 0}}
       transition={{duration: 1.75}}
-      className='bg-gray-200 dark:bg-darkElevation rounded-lg'
+      className='bg-gray-200 dark:bg-darkElevation rounded-lg drop-shadow-md'
     >
       <Tooltip
           arrow
           placement='bottom'
-          title={isDarkTheme? 'Activer le mode jour' : 'Activer le mode nuit'}
+          title={isDarkTheme? t("navbar.light_mode_toggle_tooltip_title") : t("navbar.dark_mode_toggle_tooltip_title")}
           TransitionComponent={Zoom}
           TransitionProps={{ timeout: 600 }}
       >
         <IconButton
           onClick={() => setIsDarkTheme(!isDarkTheme)}
-          className={isDarkTheme? 'text-warning sm:text-4xl lg:text-base' : 'text-dark sm:text-4xl lg:text-base'}
-          color='light'
+          className={isDarkTheme? 'text-warning sm:text-4xl lg:text-lg' : 'text-gray-700 sm:text-4xl lg:text-lg'}
         >
           {
             isDarkTheme? <BsSun /> : <BsFillMoonFill />

@@ -5,12 +5,15 @@ import {Button} from '@mui/material';
 import {services} from './dummyservices';
 
 
-import PlanCard from './plan_card/PlanCard'
+import PlanCard from './plan_card/PlanCard';
+
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
   const {isDarkTheme} = useContext(ThemeContext);
   const [serviceType, setServiceType] = useState(0);
 
+  const {t} = useTranslation();
   
   return (
     <>
@@ -21,12 +24,12 @@ const Services = () => {
         <h1
           className='sm:text-6xl lg:text-4xl opacity-80 font-righteous'
         >
-          Nos Services
+          {t('services_section.title')}
         </h1>
         <h4
           className='text-2xl opacity-60'
         >
-          Choisissez le plan qui vous convient.
+          {t('services_section.subtitle')}
         </h4>
         <div
           className='flex rounded-md mt-4 bg-dark dark:bg-darkElevation'
@@ -38,7 +41,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            SITE WEB COMPLET
+            {t('services_section.fullstack_website')}
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -47,7 +50,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            FRONTEND UNIQUEMENT
+            {t('services_section.frontend_website')}
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -56,7 +59,7 @@ const Services = () => {
             className='mr-4 font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            API Rest
+            {t('services_section.restful_api')}
           </Button>
           <Button
             color = {isDarkTheme? 'secondary':'light'}
@@ -65,7 +68,7 @@ const Services = () => {
             className='font-medium'
             sx={{fontFamily: "'Kanit', sans-serif"}}
           >
-            DESIGN WEB
+            {t('services_section.design_web')}
           </Button>
         </div>
 
@@ -75,7 +78,7 @@ const Services = () => {
           {services[serviceType].plans.map((plan) => {
             return (
               <PlanCard type={services[serviceType].title} level={plan.title} pricePerHour={plan.priceperHour} advantagesIndexes={plan.advantagesIndexes} serviceType={serviceType}/>
-            )
+            );
           })}
         </div>
       </div>

@@ -1,10 +1,10 @@
 export const services = [
     {
-        title: 'SITE WEB COMPLET',
+        title: 'fullstack_website',
         plans: [
             {
                 id: 0,
-                title: 'Basique',
+                title: 'basic',
                 advantagesIndexes:[
                     1, 3, 5  
                 ],
@@ -15,7 +15,7 @@ export const services = [
             },
             {
                 id: 1,
-                title: 'Standard',
+                title: 'standard',
                 advantagesIndexes:[
                     1, 2, 3, 5, 6  
                 ],
@@ -26,9 +26,9 @@ export const services = [
             },
             {
                 id: 3,
-                title: 'Premium',
+                title: 'premium',
                 advantagesIndexes:[
-                    0,1, 2, 3, 4, 5, 6, 7, 8 
+                    0,1, 2, 3, 4, 5, 6, 7
                 ],
                 priceperHour: {
                     'USD': 2,
@@ -38,11 +38,11 @@ export const services = [
         ]
     },
     {
-        title: 'FRONTEND UNIQUEMENT',
+        title: 'frontend_website',
         plans: [
             {
                 id: 0,
-                title: 'Standard',
+                title: 'standard',
                 advantagesIndexes:[
                     1, 3 
                 ],
@@ -53,7 +53,7 @@ export const services = [
             },
             {
                 id: 1,
-                title: 'Premium',
+                title: 'premium',
                 advantagesIndexes:[
                     0, 1, 2, 3, 4 
                 ],
@@ -65,11 +65,11 @@ export const services = [
         ]
     },
     {
-        title: 'API RESTT',
+        title: "restful_api",
         plans: [
             {
                 id: 0,
-                title: 'Standard',
+                title: 'standard',
                 advantagesIndexes:[
                     1, 3 
                 ],
@@ -80,7 +80,7 @@ export const services = [
             },
             {
                 id: 1,
-                title: 'Premium',
+                title: 'premium',
                 advantagesIndexes:[
                     0, 1, 2, 3, 4 
                 ],
@@ -92,11 +92,11 @@ export const services = [
         ]
     },
     {
-        title: 'DESIGN WEB',
+        title: 'design_web',
         plans: [
             {
                 id: 0,
-                title: 'Standard',
+                title: 'standard',
                 advantagesIndexes: [
                     0
                 ],

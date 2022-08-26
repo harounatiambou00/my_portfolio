@@ -3,30 +3,29 @@ import NavlinksItem from './navlinks_item/NavlinksItem';
 
 import {motion} from 'framer-motion';
 
-
 const navlinks = [
   {
-      name: "Acceuil",
+      name: "home_link",
       to : "home__section"
   },
   {
-      name: "A propos de moi",
+      name: "about_me_link",
       to : "about__me__section"
   },
   {
-      name: "Compétences",
+      name: "skills_link",
       to : "skills__section"
   },
   {
-      name: "Education",
+      name: "education_link",
       to : "education__section"
   },
   {
-      name: "Portfolio",
+      name: "portfolio_link",
       to : "portfolio__section"
   },
   {
-      name: "Contactez-nous",
+      name: "contact_us_link",
       to : "contact__me__section"
   },
 ];

@@ -11,7 +11,7 @@ import { SkillCard } from '../../components';
 import { tools } from '../../data/skills/tools';
 
 const ToolsSkills = ({expanded, handleChange}) => {
-    const {isDarkTheme, setIsDarkTheme} = useContext(ThemeContext);
+    const {isDarkTheme, t} = useContext(ThemeContext);
   return (
     <Accordion 
         expanded={expanded === 'tools-panel'} 
@@ -32,7 +32,7 @@ const ToolsSkills = ({expanded, handleChange}) => {
             >
               <FaTools />
             </IconButton>
-            OUTILS DE DEVELOPPEMENT
+            {t('skills_section.develoment_tools')}
           </div>
         </AccordionSummary>
         <AccordionDetails

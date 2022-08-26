@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { ThemeContext } from '../../../contexts/ThemeContext';
 
+import i18next from 'i18next';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -27,6 +28,7 @@ import {FaCodeBranch} from 'react-icons/fa';
 
 const ProjectsSwiper = () => {
     const {isDarkTheme} = useContext(ThemeContext);
+
   return (
     <Swiper
           effect={"cards"}
@@ -68,7 +70,7 @@ const ProjectsSwiper = () => {
                                         <p
                                             className='font-light text-sm '
                                         >
-                                            {project.description}
+                                            {i18next.language === "fr"? project.description.fr : project.description.en}
                                         </p>
                                     </div>
 

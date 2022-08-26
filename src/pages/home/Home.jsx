@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 import {Tooltip, Button, Zoom} from '@mui/material';
 
@@ -9,6 +10,7 @@ import TypewriterComponent from 'typewriter-effect';
 import svg_programming from '../../assets/illustrations/undraw_programming.svg';
 
 const Home = () => {
+  const {t} = useContext(ThemeContext);
   return (
     <motion.div
       className='app__section sm:h-auto lg:h-screen items-center justify-center sm:pt-48 sm:pb-20  lg:pt-4'
@@ -29,7 +31,7 @@ const Home = () => {
         <div>
           <Tooltip
             placement='top-start'
-            title="Fofo veut dire 'Salut' dans ma langue natale."
+            title={t("home_section.fofo_tooltip_title")}
             className='font-kanit cursor-pointer'
             TransitionComponent={Zoom}
             TransitionProps={{timeout: 300}}
@@ -42,7 +44,7 @@ const Home = () => {
             >
               <TypewriterComponent 
                 options={{
-                  strings: "Fofo, moi c'est",
+                  strings: t('home_section.fofo_my_name_is'),
                   autoStart: true,
                   cursor: "_", 
                   delay : 50
@@ -60,7 +62,7 @@ const Home = () => {
           >
             <TypewriterComponent 
               options={{
-                strings: "Abdoul Wahabou<br />Harouna TIAMBOU.",
+                strings: "Abdoul-Wahabou",
                 autoStart: true,
                 cursor: "_",
                 delay: 50,
@@ -75,7 +77,7 @@ const Home = () => {
           >
             <TypewriterComponent 
               options={{
-                strings: "Je crée des choses en rapport avec le web",
+                strings: t("home_section.title"),
                 autoStart: true,
                 cursor: "_",
                 delay: 50
@@ -86,11 +88,11 @@ const Home = () => {
               initial={{y: 50}}
               animate={{y: 0}}
               transition={{duration: 1}}
-              className='sm:text-4xl lg:text-xl opacity-90 mt-7'
+              className='sm:text-4xl lg:text-lg opacity-90 mt-5'
           >
             <TypewriterComponent 
               options={{
-                strings: "Je suis un étudiant en génie logiciel spécialisé dans le développement de sites Web et d'applications mobiles.<br />Actuellement, je dirige également une petite start-up nommée TiamTech.",
+                strings: t("home_section.description"),
                 autoStart: true,
                 cursor: "_",
                 delay: 20,
@@ -110,7 +112,7 @@ const Home = () => {
         initial={{y: 60}}
         animate={{y: 0}}
         transition={{duration: 1}}
-        className='mt-16 flex justify-around items-center w-full lg:px-48'
+        className='mt-10 flex justify-around items-center w-full lg:px-48'
       >
         <Button
           className='font-righteous'
@@ -121,7 +123,7 @@ const Home = () => {
             href='#portfolio__section'
             className='sm:text-xl lg:text-base'
           >
-            Voir nos récents travaux
+            {t("home_section.recent_works_button_text")}
           </a>
         </Button>
         <Button
@@ -133,7 +135,7 @@ const Home = () => {
             href='#contact__me__section'
             className='sm:text-xl lg:text-base'
           >
-            Contactez-nous
+            {t("home_section.get_in_touch_button_text")}
           </a>
         </Button>
       </motion.div>
