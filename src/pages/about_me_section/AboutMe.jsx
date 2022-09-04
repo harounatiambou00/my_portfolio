@@ -69,7 +69,7 @@ const AboutMe = () => {
               startIcon={<DownloadIcon />}
             >
               <a
-                href='https://drive.google.com/file/d/1WcX8IPjef1AzJ1h4ABO7Trc3fZHTXMUb/view?usp=sharing'
+                href='https://drive.google.com/drive/folders/1HnYUK9uh1hsmu6DmLgeUaBqzps9Vxok0?usp=sharing'
                 target="_blank"
                 rel='noreferrer'
               >
